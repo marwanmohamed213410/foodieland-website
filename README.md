@@ -38,7 +38,7 @@ Frontend: HTML, CSS, js, Bootstrap
 
   <!-- mariam ibrahim section -->
   <li>
-    Maryam Ibrahim Mohamed  (ID: 2320598)</b>:
+    Mariam Ibrahim Mohamed  (ID: 2320598)</b>:
     <a href="https://github.com/mariomaibrahim" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" alt="Maryam Ibrahim" height="30" width="40" /></a>
     <a href="https://www.linkedin.com/in/mariam-ibrahim-b95743307/" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/LinkedIn.svg" alt="Maryam Ibrahim" height="30" width="40" /></a>
   </li>
@@ -49,14 +49,37 @@ Frontend: HTML, CSS, js, Bootstrap
     <a href="https://github.com/marwanmohamed213410" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" alt="Marwan Mohamed" height="30" width="40" /></a>
     <a href="https://www.linkedin.com/in/marwan-mohamed-223818m20/" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/LinkedIn.svg" alt="marwan mohamed" height="30" width="40" /></a>
   </li>
-
+  
+  <!-- amar section -->
   <li>
-    Ammar Gamal Hassan  (ID: 2320395)</b>:
+    Ammar Gamal Hassan  (ID: 2320395):
     <a href="https://github.com/ammargamal801" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" alt="ammar" height="30" width="40" /></a>
   </li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+
+  <!--fares section -->
+  <li>
+    Fares Mohamed yassin  (ID: 2320426):
+    <a href="https://github.com/faresm07amed" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" alt="fares" height="30" width="40" /></a>
+    <a href="https://www.linkedin.com/in/fares-mohamed-90b338308/" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/LinkedIn.svg" alt="fares" height="30" width="40" /></a>
+  </li>
+  
+  <!--fahd section -->
+  <li>
+    Fahd Mohamed Saad  (ID: 2320443):
+    <a href="https://github.com/Fahd74" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" alt="fahd" height="30" width="40" /></a>
+    <a href="https://www.linkedin.com/in/fahd-mohamed-761a97232" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/LinkedIn.svg" alt="fahd" height="30" width="40" /></a>
+  </li>
+
+  <!--hossny section-->
+  <li>
+    Abdalrhman Hosny Mohamed  (ID: 2320324):
+    <a href="https://github.com/Abdalrhman-Hosny" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" alt="fahd" height="30" width="40" /></a>
+  </li>
+
+  <!--abdo section-->
+  <li>
+    Abdalruhman Ahmed Mohamed  (ID: 2320373):
+    <a href="https://github.com/abdo164" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" alt="fahd" height="30" width="40" /></a>
+  </li>
   <li></li>
 </ul>
