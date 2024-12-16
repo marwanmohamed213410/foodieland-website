@@ -81,5 +81,9 @@ Frontend: HTML, CSS, js, Bootstrap
     Abdalruhman Ahmed Mohamed  (ID: 2320373):
     <a href="https://github.com/abdo164" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" alt="fahd" height="30" width="40" /></a>
   </li>
-  <li></li>
+  
+  <li>
+    Ziad Mohamed Ali Elbadry  (ID: 2320373):
+    <a href="https://github.com/ZiadAlbadry" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" alt="fahd" height="30" width="40" /></a>
+  </li>
 </ul>
