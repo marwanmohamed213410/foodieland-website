@@ -14,9 +14,18 @@ Frontend: HTML, CSS, js, Bootstrap
 <h2>👾 Authors</h2>
 <ul>
   <!-- alaa section -->
-  <li>Alaa hamdoun abo bakr <b>(ID: 2320151)</b>: 
+  <li>
+    Alaa hamdoun abo bakr <b>(ID: 2320151)</b>: 
     <a href="https://github.com/AlaaHamdounlolo" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" alt="alaa hamdoun" height="30" width="40" /></a>
   </li>
+  
+  <!-- doaa essam section -->
+  <li>    
+    Doaa Essam Elhoseni <b>(ID: 2320214)</b>: 
+    <a href="https://github.com/DoaaEssam1" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" alt="mariam eid" height="30" width="40" /></a>
+    <a href="#" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/LinkedIn.svg" alt="doaa" height="30" width="40" /></a>
+  </li>
+  
   <!-- mariam eid section -->
   <li>
     Maryam Eid Abdelsalam <b>(ID: 2320603)</b>: 
@@ -25,7 +34,8 @@ Frontend: HTML, CSS, js, Bootstrap
   </li>
 
   <!-- mariam ibrahim section -->
-  <li>Maryam Ibrahim Mohamed <b>(ID: 2320598)</b>: 
+  <li>
+    Maryam Ibrahim Mohamed <b>(ID: 2320598)</b>: 
     <a href="https://github.com/mariomaibrahim" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" alt="Maryam Ibrahim" height="30" width="40" /></a>
     <a href="https://www.linkedin.com/in/mariam-ibrahim-b95743307/" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/LinkedIn.svg" alt="Maryam Ibrahim" height="30" width="40" /></a>
   </li>
@@ -40,7 +50,7 @@ Frontend: HTML, CSS, js, Bootstrap
   
   
   
-  <li></li>
+
   <li></li>
   <li></li>
   <li></li>
