@@ -11,7 +11,7 @@ foodieland is a modern, user-friendly web application designed for food enthusia
 <h2>🛠️ Tech Stack</h2>
 Frontend: HTML, CSS, js, Bootstrap
 
-<h2>Authors</h2>
+<h2>👾 Authors</h2>
 <ul>
   <li></li>
   <li></li>
