@@ -20,6 +20,7 @@ Frontend: HTML, CSS, js, Bootstrap
   <li>
     Alaa hamdoun abo bakr (ID: 2320151):
     <a href="https://github.com/AlaaHamdounlolo" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" alt="alaa hamdoun" height="30" width="40" /></a>
+    <a href="https://www.linkedin.com/in/alaa-hamdoun-68a005258" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/LinkedIn.svg" alt="alaa" height="30" width="40" /></a>
   </li>
   
   <!-- doaa essam section -->
@@ -81,9 +82,11 @@ Frontend: HTML, CSS, js, Bootstrap
     Abdalruhman Ahmed Mohamed  (ID: 2320373):
     <a href="https://github.com/abdo164" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" alt="fahd" height="30" width="40" /></a>
   </li>
-  
+
+  <!--ziad section-->
   <li>
     Ziad Mohamed Ali Elbadry  (ID: 2320373):
-    <a href="https://github.com/ZiadAlbadry" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" alt="fahd" height="30" width="40" /></a>
+    <a href="https://github.com/ZiadAlbadry" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" alt="ziad" height="30" width="40" /></a>
+    <a href="https://www.linkedin.com/in/ziad-albadry-732866243" target="blank"><img align="center" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/LinkedIn.svg" alt="ziad" height="30" width="40" /></a>
   </li>
 </ul>
