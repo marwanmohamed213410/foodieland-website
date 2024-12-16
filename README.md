@@ -1,6 +1,9 @@
 <h1>🍳 foodieland</h1>
 foodieland is a modern, user-friendly web application designed for food enthusiasts and home chefs to explore, create, and share recipes. Built with HTML, CSS, Bootstrap and java script it provides a seamless experience with interactive features and a clean, responsive design.
 
+## 📚 Project Information  
+This project was developed as part of the **Web Development** course under the guidance of **Dr. Ashraf Abdel Aziz** at the **Borg El Arab University**, Information Technology Department.
+
 <h2>🚀 Features</h2>
 <ul>
   <li>Recipe Catalog: Browse and search for recipes by category, cuisine, or ingredients.</li>
