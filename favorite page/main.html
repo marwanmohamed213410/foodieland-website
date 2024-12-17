@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+</head>
+<body>
+    <h1>Main Page</h1>
+    <p>Click "Add to Favorite" to add an item to your favorites list.</p>
+    <ul>
+        <li>
+            Item 1
+            <button onclick="addToFavorites('Item 1')">Add to Favorite</button>
+        </li>
+        <li>
+            Item 2
+            <button onclick="addToFavorites('Item 2')">Add to Favorite</button>
+        </li>
+        <li>
+            Item 3
+            <button onclick="addToFavorites('Item 3')">Add to Favorite</button>
+        </li>
+    </ul>
+
+    <a href="favorite.html">Go to Favorites Page</a>
+
+    <script>
+        // Function to add items to the favorite list in localStorage
+        function addToFavorites(item) {
+            // Retrieve current favorites or initialize an empty array
+            let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+            // Check if the item is already in favorites
+            if (!favorites.includes(item)) {
+                favorites.push(item);
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+                alert(`${item} has been added to your favorites!`);
+            } else {
+                alert(`${item} is already in your favorites.`);
+            }
+        }
+    </script>
+</body>
+</html>
