@@ -14,6 +14,10 @@ This project was developed as part of the **Web Development** course under the g
 <h2>🛠️ Tech Stack</h2>
 Frontend: HTML, CSS, js, Bootstrap
 
+<h2>🔗 Resources</h2>
+<ul>
+<li>temblate design on <a href="https://www.figma.com/design/WzcCQ0Ov7PHkSVO8cH27e6/BATU-web-design?node-id=1-296&t=x3onsBBEuRip2Ehh-1">figma</a></li>
+</ul>
 <h2>👾 Authors</h2>
 <ul>
   <!-- alaa section -->
