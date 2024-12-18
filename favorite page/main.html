@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="favorite_script.js" async></script>
     <title>Main Page</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
     <ul>
         <li>
             Item 1
-            <button onclick="addToFavorites('Item 1')">Add to Favorite</button>
+            <button onclick="addToFavorites('Item (1)')">Add to Favorite</button>
         </li>
         <li>
             Item 2
@@ -25,21 +26,5 @@
 
     <a href="favorite.html">Go to Favorites Page</a>
 
-    <script>
-        // Function to add items to the favorite list in localStorage
-        function addToFavorites(item) {
-            // Retrieve current favorites or initialize an empty array
-            let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-
-            // Check if the item is already in favorites
-            if (!favorites.includes(item)) {
-                favorites.push(item);
-                localStorage.setItem('favorites', JSON.stringify(favorites));
-                alert(`${item} has been added to your favorites!`);
-            } else {
-                alert(`${item} is already in your favorites.`);
-            }
-        }
-    </script>
 </body>
 </html>
