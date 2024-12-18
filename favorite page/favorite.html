@@ -3,42 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <script src="favorite_script.js" async></script>
+
     <title>Favorites Page</title>
 </head>
 <body>
+    <header>
+        <a href="#">
+            <img src="../assets/home page/Foodieland.jpg" class="logo">
+        </a>
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="main">
+            <a href="https://www.facebook.com" target="_blank"><i class="ri-facebook-fill"></i></a>
+            <a href="https://www.x.com" target="_blank"> <i class="ri-twitter-fill"></i></a>
+            <a href="https://www.instagram.com" target="_blank"> <i class="ri-instagram-fill"></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+        </div>
+    </header>
     <h1>Your Favorites</h1>
     <ul id="favorites-list"></ul>
     <button onclick="clearFavorites()">Clear All Favorites</button>
     <br><br>
     <a href="main.html">Back to Main Page</a>
 
-    <script>
-        // Function to display favorites on the page
-        function displayFavorites() {
-            const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-            const favoritesList = document.getElementById('favorites-list');
-
-            if (favorites.length === 0) {
-                favoritesList.innerHTML = '<li>No favorite items yet.</li>';
-            } else {
-                favoritesList.innerHTML = '';
-                favorites.forEach(item => {
-                    const listItem = document.createElement('li');
-                    listItem.textContent = item;
-                    favoritesList.appendChild(listItem);
-                });
-            }
-        }
-
-        // Function to clear all favorites
-        function clearFavorites() {
-            localStorage.removeItem('favorites');
-            displayFavorites(); // Refresh the list
-            alert('All favorites have been cleared!');
-        }
-
-        // Call displayFavorites on page load
-        displayFavorites();
-    </script>
 </body>
 </html>
