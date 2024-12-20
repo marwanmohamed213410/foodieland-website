@@ -117,7 +117,6 @@ header {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 95%;
@@ -126,30 +125,91 @@ header {
     border-radius: 10px;
 }
 
-
 .home {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
     align-items: center;
+    margin-top: 40px;
+    background-color: rgba(231, 250, 254, 1);
+    width: 95%;
+    height: 100%;
+    border-radius: 12px;
 }
 
 .home-text {
-    background-color: rgba(231, 250, 254, 1);
     width: 620px;
-    height: 640px;
-    border-radius: 12px;
+    padding: 20px;
 }
 
 .image {
     width: 660px;
     height: 640px;
-    background-image: url(./6edfd21071175cb80c78475e2182df7b.jpg);
-    background-position: center center;
+    background-position: right center;
     background-size: cover;
     border-radius: 12px;
 }
 
+.BMW {
+    margin-top: 20px;
+}
+
+.time-eat {
+    display: flex;
+    gap: 20px;
+}
+
+.text-time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.person-eat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.person img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.person-name p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.person-name span {
+    font-size: 14px;
+    color: gray;
+}
+
+.btn {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn:hover {
+    background-color: black;
+}
 .text {
     display: flex;
     align-items: center;
