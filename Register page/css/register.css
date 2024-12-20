@@ -1,0 +1,56 @@
+.bg-image{
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.card{
+    background: transparent;
+    border: 2px solid rgba(255,255,255 ,.5);
+    backdrop-filter: blur(20px);
+   display: flex;
+}
+
+.form-outline{
+    position: relative;
+    border-bottom: 2px solid #162938;
+}
+.form-outline label{
+    position: absolute;
+    ;
+    transform: translate(-20%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: -5px;
+  
+    
+
+}
+
+.form-outline input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #162938;
+}
+
+.form-outline span{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color:#162938
+    line-height 57px; 
+}
+.form-outline input:focus¬label,
+.form-outline input:valid¬label{
+    top: -5px;
+}
+.closeicon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+
+}
