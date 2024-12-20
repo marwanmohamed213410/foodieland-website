@@ -673,6 +673,7 @@ a .btn:hover{
     margin-bottom: 60px;
     margin-top: 60px;
     min-height: 700px;
+    padding-bottom:30px ;
 
 }
 
@@ -821,24 +822,27 @@ a .btn:hover{
 
 
 .card-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    background-color: #fff;
-    gap: 10px;
-    border-radius: 15px;
-    width: 229px;
-    height: 60px;
-    border: none;
-    background-color: #000;
-    color: #fff;
-    font-size: 16px;
-    line-height: 19.5px;
-    letter-spacing: -0.08px;
-    cursor: pointer;
-    margin-top: 60px;
-    margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: #000;
+        gap: 10px;
+        border-radius: 15px;
+        width: 229px;
+        height: 60px;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        line-height: 19.5px;
+        letter-spacing: -0.08px;
+        cursor: pointer;
+        margin-top: 40px;
+        margin-bottom: 60px;  
+    }
+
+.card-btn:hover{
+    transform: scale(1.05);
 }
 
 .container-6 {
