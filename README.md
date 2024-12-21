@@ -16,6 +16,8 @@ Frontend: HTML, CSS, js, Bootstrap
 
 <h2>🔗 Resources</h2>
 <ul>
+<li><a href="https://drive.google.com/file/d/14R5LimOMaaO_t3tTDk8Eyf_ar-jENSI4/view?usp=sharing">Web Programming Project outlines</a></li>
+<li><a href="https://drive.google.com/file/d/1z_vDCm5xigUj85lr7HLK0E5JJ5lk8X44/view?usp=sharing">Team Name and idea</a></li>
 <li>temblate design on <a href="https://www.figma.com/design/WzcCQ0Ov7PHkSVO8cH27e6/BATU-web-design?node-id=1-296&t=x3onsBBEuRip2Ehh-1">figma</a></li>
 </ul>
 <h2>👾 Authors</h2>
