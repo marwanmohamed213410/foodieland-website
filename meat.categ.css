@@ -37,3 +37,23 @@ align-items: center;
   width: 200px; 
 }
 
+  /* تأثير عند الضغط على الكرت */
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* لتحديد المدة والطريقة */
+  }
+
+  /* تكبير الكرت عند المرور */
+  .card-hover:hover {
+    transform: scale(1.05); /* تكبير الكرت بنسبة 5% عند المرور */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظلال عند المرور */
+  }
+
+  /* تصغير الكرت عند الضغط */
+  .card-hover:active {
+    transform: scale(0.98); /* تصغير الكرت عند الضغط */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* تقليل الظلال عند الضغط */
+  }
+  .card {
+    height: 300px;
+    overflow-y: auto;
+  }
