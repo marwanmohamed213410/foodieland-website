@@ -1,0 +1,143 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .nav {
+    margin-top: 10px;
+  }
+  
+  .nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .nav a:hover {
+    color: #000;
+  }
+  
+  .main {
+    padding: 30px 0;
+  }
+  
+  .main-title {
+
+font-size: 60px;
+font-weight: 600;
+line-height: 77.45px;
+letter-spacing: -0.04em;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+  }
+  span{
+    font-weight: 800;
+  }
+  .author {
+    color: #777;
+font-size: 14px;
+font-weight: 500;
+line-height: 16.94px;
+letter-spacing: -0.02em;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+  }
+  
+  .intro {
+    margin: 20px 0;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+  }
+  
+  .main-image {
+    width: 1200px;
+    max-height: 500px;
+    object-fit: cover;
+    margin: 20px 0;
+    border-radius: 30px;
+    
+  }
+  
+  .faq {
+    font-weight: 400;
+    margin-top: 30px;
+  }
+  
+  .faq h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    margin-bottom: 0;
+width: 839px;
+height: 40px;
+top: 2779px;
+left: 191px;
+gap: 0px;
+opacity: 0px;
+
+  }
+  
+  .faq-image {
+    width: 200%;
+    max-width: 700px;
+    margin: 10px 0;
+    border-radius: 30px;
+  }
+  p{
+    color: #777;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    
+  }
+  
+.quote {  
+background: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+font-size: 36px;
+font-style: italic;
+font-weight: 500;
+line-height: 64px;
+letter-spacing: -0.04em;
+text-align: left;
+text-decoration-skip-ink: none;
+width: 920px;
+height: 224px;
+top: 2491px;
+left: 150px;
+gap: 0px;
+opacity: 0px;
+
+  }
+  .share-icons {
+    text-align: right; 
+}
+
+.icons {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;
+}
+
+.icons a {
+    margin: 5px 0;
+    font-size: 24px; 
+    color: #000; 
+}
+
