@@ -9,7 +9,7 @@
 
 :root {
     --bg-color: #222327 --text-color: #fff;
-    --main-color: #29fd53
+    --main-color: #fff
 }
 
 body {
@@ -563,7 +563,7 @@ header {
     padding: 10px;
     position: absolute;
     top: 30px;
-    right: 30px;
+    right: 50px;
     z-index: 2;
     width: 48px;
     height: 48px;
@@ -877,7 +877,7 @@ a .btn:hover{
 }
 
 #card {
-    width: 290px;
+    width: 350px;
     height: 316px;
     border-radius: 15px;
     position: relative;
@@ -909,7 +909,7 @@ a .btn:hover{
 }
 
 #card .card-icon {
-    right: 0;
+    right: 50px;
     transform: translateX(15px);
 }
 
