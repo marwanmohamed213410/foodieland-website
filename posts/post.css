@@ -149,7 +149,7 @@ blockquote {
     position: absolute;
     top: 35%;
     left: 50%;
-    min-width: 60%;
+    min-width: 70%;
     height: 100%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -189,7 +189,7 @@ blockquote {
 .feed-back button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    margin-left: 0.5rem;
+    margin-top: 30px;
     border: none;
     border-radius: 1rem;
     background-color: #000000;
@@ -211,14 +211,12 @@ blockquote {
 
 .feed-back-img-1 {
     position: absolute;
-    bottom: 250px;
     left: -100px;
     transform: translateX(-150px);
 }
 
 .feed-back-img-2 {
     position: absolute;
-    bottom: 100px;
     right: 70px;
 }
 
