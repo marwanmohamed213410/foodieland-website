@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts embed code -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <!-- Render all elements normaly -->
+    <link rel="stylesheet" href="../CSS/normalize.css" />
+    <!-- linking main css file -->
     <link rel="stylesheet" href="../CSS/main.css">
-    <script src="favorite_script.js" async></script>
+    <!-- font awsome library -->
+    <link rel="stylesheet" href="../CSS/all.min.css" />
+    <!-- boxicons library -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- adding fav icon -->
+    <link rel="shortcut icon" href="assets/home page/f84cef4b8a52c8b0378a13f08550d937.png" type="image/x-icon">
+
+    
 
     <title>Favorites Page</title>
 </head>
@@ -35,11 +45,12 @@
 
         </div>
     </header>
-    <h1>Your Favorites</h1>
-    <ul id="favorites-list"></ul>
-    <button onclick="clearFavorites()">Clear All Favorites</button>
-    <br><br>
-    <a href="main.html">Back to Main Page</a>
+    <!-- <div class="container-3"> -->
+    <center><h1>Your Favorites</h1></center>
+    <div class="carditem" id="favorites-container">
+        <!-- Favorites will be dynamically inserted here -->
 
+</div>
+    <script src="favorite_script.js"></script>
 </body>
 </html>
