@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="category-pages.css">
+    <base href="foodpics/">
 </head>
 <div style="background-color: #0f172a">
     <nav class="container-fluid navbar fixed-top border-0 "style="background-color: #0f172a">    <!-- main navbar -->
@@ -36,17 +37,13 @@
                           <!-- dark-mode-buttons -->
                 <div class="col-2 d-flex align-items-center flex-shrink-0 justify-content-end  ">
 
-                  <!-- Buttons -->
-  <div class="d-flex  justify-content-end gap-2 border-0" style="background-color: #0f172a" >
-    <!-- Button 1: Hilal -->
-    <a href="" class="btn btn-hilal border-ligh bg-dark" style="color: white;">
-      <i class="bi bi-moon" ></i>
-    </a>
-    <!-- Button 2: Shams -->
-    <a href="http://127.0.0.1:5500/foodieland-website/meat-page.html" class="btn btn-shams bg-light " style="color: black;">
-      <i class="bi bi-sun border-light"></i>
-    </a>
- </div>
+                  <div class="toggle-btn-container border mx-xxl-0 " style="margin-right: 80px;">
+                    <span class="sun pb-1"><i class="bi bi-sun-fill"></i></span>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="toggleSwitch">
+                    </div>
+                    <span class="moon pb-1"><i class="bi bi-moon-fill" style="color: white;"></i></span>                          
+                </div>
                 
                 <div  >     <!-- hamburger button menu when the screen meduim -->
                 <button class="navbar-toggler  d-flex d-xl-flex d-xxl-none text-light ms-4" style="background-color: white;" 
@@ -152,7 +149,7 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
             </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat1.png" class="card-img-top w-100 h-100" alt="...">
+              <img src="meat1.png" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2 text-light" style="background-color: #2A3B4D">
                 <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3 text-light" style=" font-size: px; min-height: 104px;"> Steak and buttered Potato.</h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
@@ -170,7 +167,7 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>                
             </div>
             <div class="card card-hover  ">
-              <img src="../foodieland-website/meat2.png" class="card-img-top img-fluid" alt="...">
+              <img src="meat2.png" class="card-img-top img-fluid" alt="...">
               <div class="pt-2 text-light" style="background-color: #2A3B4D">
                 <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3 " style=" min-height: 104px;">Cauliflower Walnut Vegetarian Taco Meat</h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
@@ -188,7 +185,7 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
               </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat3.jpeg" class="card-img-top w-100 h-100" alt="...">
+              <img src="meat3.jpeg" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2  text-light"  style="background-color: #2A3B4D">
                 <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3" style=" min-height: 104px;">Deliciously satisfying Beef Goulash. </h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
@@ -206,7 +203,7 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
                   </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat4.jpg" class="card-img-top w-100 h-100" alt="...">
+              <img src="meat4.jpg" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2 text-light"  style="background-color: #2A3B4D">
                 <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3" style=" min-height: 104px;"> Classic Pot-au-Feu.</h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
@@ -226,7 +223,7 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
                 </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat5.png" class="card-img-top w-100 h-100" alt="...">
+              <img src="meat5.png" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2  text-light" style="background-color: #2A3B4D">
                 <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">Big and Juicy Wagyu Beef steak </h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
@@ -244,7 +241,7 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
                 </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat6.png" class="card-img-top w-100 h-100" alt="...">
+              <img src="meat6.png" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2  text-light" style="background-color: #2A3B4D">
                 <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;"> Big and Juicy Wagyu Beef Cheeseburger</h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
@@ -262,7 +259,7 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
                  </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat7.jpg" class="card-img-top w-100 h-100" alt="...">
+              <img src="meat7.jpg" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2  text-light" style="background-color: #2A3B4D">
                 <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">Easy Lamb Lollipop Recipe</h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
@@ -280,7 +277,7 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
                 </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat8.png" class="card-img-top w-100 h-100" alt="...">
+              <img src="meat8.png" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2  text-light" style="background-color: #2A3B4D">
                 <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;"> Chicken Meatballs with Cream Cheese</h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
@@ -300,7 +297,7 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
                  </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat9.jpg" class="card-img-top w-100 h-100" alt="...">
+              <img src="meat9.jpg" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2  text-light" style="background-color: #2A3B4D">
                 <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;"> Sichuan Dry-Fried Beef Recipe </h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
@@ -318,7 +315,7 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
               </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat10.jpeg" class="card-img-top w-100 h-100" alt="...">
+              <img src="meat10.jpeg" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2  text-light" style="background-color: #2A3B4D">
                 <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">Barbeque Sandwiches.  </h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
@@ -336,7 +333,7 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>                
             </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat11.png" class="card-img-top w-100 h-100" alt="...">
+              <img src="meat11.png" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2  text-light" style="background-color: #2A3B4D">
                 <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">Garlic Butter steak bites as tasty snacks</h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
@@ -354,7 +351,7 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
             </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat12.webp" class="card-img-top w-100 h-100" alt="...">
+              <img src="meat12.webp" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2  text-light" style="background-color: #2A3B4D">
                 <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">Cube steak with onion and mushroom</h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
@@ -400,10 +397,10 @@
                   <button class="subscribe-button">Subscribe</button>
               </div>
               <div class="feed-back-img-1">
-                  <img src="assets/home_page/202020.png" alt="">
+                  <img src="202020.png" alt="">
               </div>
               <div class="feed-back-img-2">
-                  <img src="assets/home_page/303030.png" alt="">
+                  <img src="303030.png" alt="">
               </div>
 
           </div>
@@ -443,7 +440,48 @@
   
   </footer>
 
-
+<script>
+  const toggleSwitch = document.querySelector("#toggleSwitch");
+    
+    // التحقق من حالة الوضع المحفوظة عند تحميل الصفحة
+    window.addEventListener("load", () => {
+        const savedMode = localStorage.getItem("mode");
+    
+        // إذا كان الوضع المحفوظ "dark" نقوم بتفعيل وضع الداكن
+        if (savedMode === "dark") {
+            document.body.classList.add("dark-mode");
+            toggleSwitch.checked = true;  // تغيير حالة الزر
+        } else {
+            document.body.classList.add("light-mode");
+            toggleSwitch.checked = false;  // تغيير حالة الزر
+        }
+    });
+    
+    // التبديل بين الوضعين عند التغيير في الزر
+    toggleSwitch.addEventListener("change", () => {
+        if (toggleSwitch.checked) {
+            // تفعيل وضع الداكن
+            document.body.classList.add("dark-mode");
+            document.body.classList.remove("light-mode");
+    
+            // حفظ الوضع في localStorage
+            localStorage.setItem("mode", "dark");
+    
+            // إعادة التوجيه إلى صفحة معينة عندما يكون الوضع الداكن مفعل
+            window.location.href ="http://127.0.0.1:5500/foodieland-website/meat-black.html";
+        } else {
+            // تفعيل وضع الفاتح
+            document.body.classList.add("light-mode");
+            document.body.classList.remove("dark-mode");
+    
+            // حفظ الوضع في localStorage
+            localStorage.setItem("mode", "light");
+    
+            // إعادة التوجيه إلى صفحة معينة عندما يكون الوضع الفاتح مفعل
+            window.location.href = "http://127.0.0.1:5500/foodieland-website/meat1.html";
+        }
+    });
+</script>
 
       
 </div> 

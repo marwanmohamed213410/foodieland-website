@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="category-pages.css">
+    <base href="foodpics/">
 </head>
 
 <body>
@@ -33,21 +34,21 @@
                 <a class="home-tab text-dark text-decoration-none d-none d-xxl-flex ps-4 pe-5  "  href="">Contact</a>
                 <a class="home-tab text-dark text-decoration-none d-none d-xxl-flex flex-shrink-0 ps-4 pe-4  " href="">About us</a>
 
-            </div>   
-                        <!-- humberger menu and dark-mode-buttons -->
+              </div>   
+              <!-- humberger menu and dark-mode-buttons -->
+               
                 <div class="col-2 d-flex align-items-center flex-shrink-0 justify-content-end  ">
-                    <!-- dark mode buttons -->
                   <div class="d-flex  justify-content-end gap-2 border-0" >
-                    <!-- Button 1: Hilal -->
-                    <a href="http://127.0.0.1:5500/foodieland-website/meat-black.html" class="btn btn-hilal border bg-dark" style="color: white;">
-                      <i class="bi bi-moon " ></i>
-                    </a>
-                    <!-- Button 2: Shams -->
-                    <a href="" class="btn btn-shams border bg-white" style="color: black;">
-                      <i class="bi bi-sun border-light"></i>
-                    </a>
-                 </div>
-                
+                    <!-- Buttons light-dark -->    
+                  <div class="toggle-btn-container bg-light border mx-xxl-0 " style="margin-right: 80px;">
+                      <span class="sun pb-1"><i class="bi bi-sun-fill"></i></span>
+                      <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" id="toggleSwitch">
+                      </div>
+                      <span class="moon pb-1"><i class="bi bi-moon-fill"></i></span>                          
+                  </div>
+
+
                 <div >     <!-- hamburger button menu when the screen meduim -->
                 <button class="navbar-toggler  d-flex d-xl-flex d-xxl-none ms-4 "   
                 type="button" data-bs-toggle="offcanvas" 
@@ -104,12 +105,12 @@
         </div>
        </nav>   <!-- end of navbar  -->
 
-      <div class="container " style="margin-top: 200px;">  <!-- meat container -->
+      <div class="container " style="margin-top: 200px;">  <!--dessert container -->
 
         <div class="row mb-4 ">  <!-- first row meat word -->
        <h1 class=" d-flex justify-content-center "
         style="font-size: 63px;">
-        Meat</h1>
+        Dessert</h1>
         </div>
 
         <div class="row">    <!-- second row caption  --> 
@@ -135,11 +136,11 @@
           </div>
         </div>
 
-      </div> <!-- end of container meat -->
+      </div> <!-- end of container dessert -->
 
 
 
-      <div class="container position-relative " style="margin-top: 150px; margin-bottom: 100px;">  <!-- container of meat cards -->
+      <div class="container position-relative " style="margin-top: 150px; margin-bottom: 100px;">  <!-- container of dessert cards -->
 
         <div class="row g-4 mb-4 d-flex justify-content-center"> <!-- row1 -->
           <!-- Card 1 -->
@@ -149,9 +150,10 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
             </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat1.png" class="card-img-top w-100 h-100" alt="...">
+              <img src="dessert1.jpeg" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2 bg-info-subtle text-dark">
-                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3" style=" font-size: px; min-height: 104px;"> Steak and buttered Potato.</h4>
+                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3 " style=" min-height: 104px;"> 
+                  Classic chewy brownie recipe</h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
                 <i class="fa fa-clock d-flex ms-2 col-5"><h6 class=" under-card ms-2">30 Minutes</h6></i>
                 <i class="fa-solid fa-utensils d-flex ms-2 col-6"><h6 class=" under-card ms-2">Tasty</h6></i>
@@ -167,9 +169,9 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>                
             </div>
             <div class="card card-hover  ">
-              <img src="../foodieland-website/meat2.png" class="card-img-top img-fluid" alt="...">
+              <img src="dessert2.jpg" class="card-img-top img-fluid" alt="...">
               <div class="pt-2 bg-info-subtle text-dark ">
-                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3 " style=" min-height: 104px;">Cauliflower Walnut Vegetarian Taco Meat</h4>
+                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3 " style=" min-height: 104px;">Easy banana cake recipe</h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
                 <i class="fa fa-clock d-flex ms-2 col-5"><h6 class=" under-card ms-2">30 Minutes</h6></i>
                 <i class="fa-solid fa-utensils d-flex ms-2 col-6"><h6 class=" under-card ms-2">Tasty</h6></i>
@@ -185,9 +187,10 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
               </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat3.jpeg" class="card-img-top w-100 h-100" alt="...">
+              <img src="dessert3.jpg" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2 bg-info-subtle text-dark">
-                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3" style=" min-height: 104px;">Deliciously satisfying Beef Goulash. </h4>
+                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3 " style=" min-height: 104px;">
+                  Our favourite pavlova recipe </h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
                 <i class="fa fa-clock d-flex ms-2 col-5"><h6 class=" under-card ms-2">30 Minutes</h6></i>
                 <i class="fa-solid fa-utensils d-flex ms-2 col-6"><h6 class=" under-card ms-2">Tasty</h6></i>
@@ -203,9 +206,10 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
                   </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat4.jpg" class="card-img-top w-100 h-100" alt="...">
+              <img src="dessert4.jpg" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2 bg-info-subtle text-dark">
-                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3" style=" min-height: 104px;"> Classic Pot-au-Feu.</h4>
+                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3" style=" min-height: 104px;">
+                  Chocolate mousse in minutes recipe</h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
                 <i class="fa fa-clock d-flex ms-2 col-5"><h6 class=" under-card ms-2">30 Minutes</h6></i>
                 <i class="fa-solid fa-utensils d-flex ms-2 col-6"><h6 class=" under-card ms-2">Tasty</h6></i>
@@ -223,9 +227,9 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
                 </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat5.png" class="card-img-top w-100 h-100" alt="...">
+              <img src="dessert5.jpg" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2 bg-info-subtle text-dark">
-                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">Big and Juicy Wagyu Beef steak </h4>
+                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">Sticky date pudding </h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
                 <i class="fa fa-clock d-flex ms-2 col-5"><h6 class=" under-card ms-2">30 Minutes</h6></i>
                 <i class="fa-solid fa-utensils d-flex ms-2 col-6"><h6 class=" under-card ms-2">Tasty</h6></i>
@@ -241,9 +245,9 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
                 </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat6.png" class="card-img-top w-100 h-100" alt="...">
+              <img src="dessert6.jpg" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2 bg-info-subtle text-dark">
-                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;"> Big and Juicy Wagyu Beef Cheeseburger</h4>
+                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">basic meringues recipe</h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
                 <i class="fa fa-clock d-flex ms-2 col-5"><h6 class=" under-card ms-2">30 Minutes</h6></i>
                 <i class="fa-solid fa-utensils d-flex ms-2 col-6"><h6 class=" under-card ms-2">Tasty</h6></i>
@@ -259,9 +263,9 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
                  </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat7.jpg" class="card-img-top w-100 h-100" alt="...">
+              <img src="dessert7.jpg" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2 bg-info-subtle text-dark">
-                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">Easy Lamb Lollipop Recipe</h4>
+                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">Classic carrot cake recipe </h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
                 <i class="fa fa-clock d-flex ms-2 col-5"><h6 class=" under-card ms-2">30 Minutes</h6></i>
                 <i class="fa-solid fa-utensils d-flex ms-2 col-6"><h6 class=" under-card ms-2">Tasty</h6></i>
@@ -277,9 +281,9 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
                 </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat8.png" class="card-img-top w-100 h-100" alt="...">
+              <img src="dessert8.jpg" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2 bg-info-subtle text-dark">
-                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;"> Chicken Meatballs with Cream Cheese</h4>
+                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">Famous lemon slice recipe</h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
                 <i class="fa fa-clock d-flex ms-2 col-5"><h6 class=" under-card ms-2">30 Minutes</h6></i>
                 <i class="fa-solid fa-utensils d-flex ms-2 col-6"><h6 class=" under-card ms-2">Tasty</h6></i>
@@ -297,9 +301,9 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
                  </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat9.jpg" class="card-img-top w-100 h-100" alt="...">
+              <img src="dessert9.jpeg" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2 bg-info-subtle text-dark">
-                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;"> Sichuan Dry-Fried Beef Recipe </h4>
+                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">Carrot cake with cream-cheese </h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
                 <i class="fa fa-clock d-flex ms-2 col-5"><h6 class=" under-card ms-2">30 Minutes</h6></i>
                 <i class="fa-solid fa-utensils d-flex ms-2 col-6"><h6 class=" under-card ms-2">Tasty</h6></i>
@@ -315,9 +319,9 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
               </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat10.jpeg" class="card-img-top w-100 h-100" alt="...">
+              <img src="dessert10.jpeg" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2 bg-info-subtle text-dark">
-                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">Barbeque Sandwiches.  </h4>
+                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">chocolate brownie in a mug </h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
                 <i class="fa fa-clock d-flex ms-2 col-5"><h6 class=" under-card ms-2">30 Minutes</h6></i>
                 <i class="fa-solid fa-utensils d-flex ms-2 col-6"><h6 class=" under-card ms-2">Tasty</h6></i>
@@ -333,9 +337,9 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>                
             </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat11.png" class="card-img-top w-100 h-100" alt="...">
+              <img src="dessert11.jpg" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2 bg-info-subtle text-dark">
-                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">Garlic Butter steak bites as tasty snacks</h4>
+                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">Apple crumble</h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
                 <i class="fa fa-clock d-flex ms-2 col-5"><h6 class=" under-card ms-2">30 Minutes</h6></i>
                 <i class="fa-solid fa-utensils d-flex ms-2 col-6"><h6 class=" under-card ms-2">Tasty</h6></i>
@@ -351,9 +355,9 @@
                 <i  class="heart-icon bi bi-heart " ></i></button>
             </div>
             <div class="card card-hover border ">
-              <img src="../foodieland-website/meat12.webp" class="card-img-top w-100 h-100" alt="...">
+              <img src="dessert12.jpg" class="card-img-top w-100 h-100" alt="...">
               <div class="pt-2 bg-info-subtle text-dark">
-                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">Cube steak with onion and mushroom</h4>
+                <h4 class="card-text ps-2 pe-2 mb-2 pt-3 pb-3"style=" min-height: 104px;">apple crumble recipe</h4>
                 <div class=" row mt-3 align-content-center d-flex pb-2"> 
                 <i class="fa fa-clock d-flex ms-2 col-5"><h6 class=" under-card ms-2">30 Minutes</h6></i>
                 <i class="fa-solid fa-utensils d-flex ms-2 col-6"><h6 class=" under-card ms-2">Tasty</h6></i>
@@ -372,7 +376,7 @@
             <li class="page-item active px-4 rounded-4" aria-current="page">
               <span class="page-link bg-black rounded-4">1</span>
             </li>
-            <li class="page-item px-2"><a href="http://127.0.0.1:5500/foodieland-website/meat2.html#" class="page-link rounded-4 text-dark" href="#">2</a></li>
+            <li class="page-item px-2"><a class="page-link rounded-4 text-dark" href="#">2</a></li>
             <li class="page-item px-2"><a class="page-link rounded-4 text-dark" href="#">3</a></li>
             <li class="page-item px-2"><a class="page-link rounded-4 text-dark" href="#">4</a></li>
             <li class="page-item px-2"><a class="page-link rounded-4 text-dark" href="#">5</a></li>
@@ -397,10 +401,10 @@
                   <button class="subscribe-button">Subscribe</button>
               </div>
               <div class="feed-back-img-1">
-                  <img src="assets/home_page/202020.png" alt="">
+                  <img src="202020.png" alt="">
               </div>
               <div class="feed-back-img-2">
-                  <img src="assets/home_page/303030.png" alt="">
+                  <img src="303030.png" alt="">
               </div>
 
           </div>
@@ -439,7 +443,50 @@
   
   </footer>
 
+  <script>
+const toggleSwitch = document.querySelector("#toggleSwitch");
 
+// التحقق من حالة الوضع المحفوظة عند تحميل الصفحة
+window.addEventListener("load", () => {
+    const savedMode = localStorage.getItem("mode");
+
+    // إذا كان الوضع المحفوظ "dark" نقوم بتفعيل وضع الداكن
+    if (savedMode === "dark") {
+        document.body.classList.add("dark-mode");
+        toggleSwitch.checked = true;  // تغيير حالة الزر
+    } else {
+        document.body.classList.add("light-mode");
+        toggleSwitch.checked = false;  // تغيير حالة الزر
+    }
+});
+
+// التبديل بين الوضعين عند التغيير في الزر
+toggleSwitch.addEventListener("change", () => {
+    if (toggleSwitch.checked) {
+        // تفعيل وضع الداكن
+        document.body.classList.add("dark-mode");
+        document.body.classList.remove("light-mode");
+
+        // حفظ الوضع في localStorage
+        localStorage.setItem("mode", "dark");
+
+        // إعادة التوجيه إلى صفحة معينة عندما يكون الوضع الداكن مفعل
+        window.location.href ="http://127.0.0.1:5500/foodieland-website/dessert-black.html";
+    } else {
+        // تفعيل وضع الفاتح
+        document.body.classList.add("light-mode");
+        document.body.classList.remove("dark-mode");
+
+        // حفظ الوضع في localStorage
+        localStorage.setItem("mode", "light");
+
+        // إعادة التوجيه إلى صفحة معينة عندما يكون الوضع الفاتح مفعل
+        window.location.href = "http://127.0.0.1:5500/foodieland-website/dessert.html";
+    }
+});
+
+
+</script>
 
       
       
