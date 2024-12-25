@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="../CSS/recipes.css">
     <title>recipes</title>
 </head>
 
 <body>
     <header>
         <a href="#">
-            <img src="./Foodieland.jpg" class="logo"></img>
+            <img src="../assets/home_page/Foodieland.jpg" class="logo"></img>
         </a>
         <ul class="navbar">
             <li><a href="#" class="active">Home</a></li>
@@ -31,6 +32,8 @@
             <a href="#"><i class="ri-facebook-fill"></i></a>
             <a href=""> <i class="ri-instagram-fill"></i></a>
             <a href=""> <i class="ri-twitter-fill"></i></a>
+            <a href="">sign up</a>
+            <a href="">log in</a>
             <div class="bx bx-menu" id="menu-icon"></div>
 
         </div>
@@ -42,58 +45,73 @@
             <div class="cook-details">
 
                 <div class="details">
-                    <img src="./dab521f6cd5545aa07040c074c97ef51.png" alt="">
+                    <img src="../assets/home_page/dab521f6cd5545aa07040c074c97ef51.png" alt="">
                     <div class="">
                         <p>john doe</p>
                         <span>15 March 2022</span>
                     </div>
-
-
                 </div>
+
                 <div class="details">
                     <i class="ri-timer-fill i"></i>
                     <div class="">
                         <p>prep Time</p>
                         <span>15 Minutes</span>
                     </div>
-
-
                 </div>
+
+
                 <div class="details">
                     <i class="ri-timer-fill i"></i>
                     <div class="">
                         <p>COOK TIME</p>
                         <span>15 Minutes</span>
                     </div>
-
-
                 </div>
+    
                 <div class="details">
                     <i class="ri-restaurant-fill"></i>
                     <div class="">
                         <span>Chicken</span>
                     </div>
-
-
                 </div>
-
-
             </div>
+
+
+
             <div class="behind-icon">
-                <i class="ri-printer-line"></i>
-                <i class="ri-share-2-line"></i>
+                <!-- print button -->
+                <div id="print" onclick="window.print()"><i class="ri-printer-line"></i></div>
+                <!-- share button -->
+                 <div class="share-container">
+                    <button class="share-btn">
+                        <i class="ri-share-2-line"></i>
+                    </button>
+                    <div class="share-options">
+                        <p class="title">Share</p>
+                        <div class="social-media">
+                            <a href="https://www.whatsapp.com" class="social-media-btn whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com" class="social-media-btn instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.x.com" class="social-media-btn twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com" class="social-media-btn facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com" class="social-media-btn linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="link-container">
+                            <p class="link">https://example.com/share</p>
+                            <button class="copy-btn">Copy</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
-
         </div>
     </div>
+</div>
+
 
     <div class="container-2-re">
         <div class="content-img">
             
-            <img src="./585858.png" alt="">
+            <img src="../assets/home_page/585858.png" alt="">
             <div class="content-img-1">
                 <i class="ri-play-large-fill"></i>
             </div>
@@ -188,7 +206,7 @@
         <div>
             <h2>Other Recipe</h2>
             <div class="other-recipe">
-                <img id="img-re" src="./999988.png" alt="">
+                <img id="img-re" src="../assets/home_page/999988.png" alt="">
                 <div class="other-recipe-text">
                     <h2>Chicken Meatball with Creamy Chees...</h2>
                     <p>By Andreas Paula</p>
@@ -196,7 +214,7 @@
 
             </div>
             <div class="other-recipe">
-                <img src="./77779988.png" alt="">
+                <img src="../assets/home_page/77779988.png" alt="">
                 <div class="other-recipe-text">
                     <h2>Chicken Meatball with Creamy Chees...</h2>
                     <p>By Andreas Paula</p>
@@ -204,7 +222,7 @@
 
             </div>
             <div class="other-recipe">
-                <img src="./55566644.png" alt="">
+                <img src="../assets/home_page/55566644.png" alt="">
                 <div class="other-recipe-text">
                     <h2>Chicken Meatball with Creamy Chees...</h2>
                     <p>By Andreas Paula</p>
@@ -226,7 +244,7 @@
                 dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
                 dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
                 et dolore magnam aliquam quaerat voluptatem.</p>
-            <img src="./121244.png" alt="">
+            <img src="../assets/home_page/121244.png" alt="">
             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                 dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
                 dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
@@ -277,10 +295,10 @@
                 <button class="subscribe-button">Subscribe</button>
             </div>
             <div class="feed-back-img-1">
-                <img src="./202020.png" alt="">
+                <img src="../assets/home_page/202020.png" alt="">
             </div>
             <div class="feed-back-img-2">
-                <img src="./303030.png" alt="">
+                <img src="../assets/home_page/303030.png" alt="">
             </div>
 
         </div>
@@ -300,7 +318,7 @@
                     </span>
 
                 </div>
-                <img src="./7777.png" alt="">
+                <img src="../assets/home_page/7777.png" alt="">
                 <h2>Mixed Tropical Fruit Salad with Superfood Boosts </h2>
                 <div class="Timer-restaurant">
                     <div>
@@ -323,7 +341,7 @@
                     </span>
 
                 </div>
-                <img src="./8888.png" alt="">
+                <img src="../assets/home_page/8888.png" alt="">
                 <h2>Big and Juicy Wagyu Beef Cheeseburger</h2>
                 <div class="Timer-restaurant">
                     <div>
@@ -346,7 +364,7 @@
                     </span>
 
                 </div>
-                <img src="./9999.png" alt="">
+                <img src="../assets/home_page/9999.png" alt="">
                 <h2>Healthy Japanese Fried Rice with Asparagus</h2>
                 <div class="Timer-restaurant">
                     <div>
@@ -370,7 +388,7 @@
                     </span>
 
                 </div>
-                <img src="./101010.png" alt="">
+                <img src="../assets/home_page/101010.png" alt="">
                 <h2>Cauliflower Walnut Vegetarian Taco Meat</h2>
                 <div class="Timer-restaurant">
                     <div>
@@ -414,7 +432,7 @@
         </div>
     
     </footer>
-        <script src="./index.js"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>

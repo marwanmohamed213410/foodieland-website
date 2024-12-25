@@ -32,3 +32,5 @@ function showSlide(index) {
     document.querySelector('.next').addEventListener('click', () => {
         nextSlide();
     });
+    
+ 
