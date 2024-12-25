@@ -1311,7 +1311,6 @@ footer {
     font-weight: 600;
     line-height: 29.05px;
     letter-spacing: -2%;
-
 }
 
 .todo-1 p{
@@ -1548,10 +1547,7 @@ footer {
 /* Add more buttons with specific colors if needed */
 
 
-/* Container */
-
-/* Container styling */
-/* Base styles */
+/* to do */
 .container-3 {
     width: 95%;
     margin-left: 20px;
@@ -1568,7 +1564,6 @@ footer {
     font-weight: 400;
     line-height: 28px;
     transition: color 0.3s, text-decoration 0.3s;
-    /* Smooth transition for text changes */
 }
 
 .todo-1 span {
@@ -1581,21 +1576,17 @@ footer {
     border-radius: 50%;
     border: rgba(219, 226, 229, 1) solid 1px;
     display: flex;
-    /* Use flexbox to center the content */
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
     margin-right: 15px;
     vertical-align: baseline;
 }
 
-/* Completed item styles */
+
 .bmw-2 .todo.completed #circle {
     background-color: #9E9E9E;
     border: 2px solid #9E9E9E;
     transform: scale(1.2);
-    /* Slightly enlarge the circle when completed */
 }
 
 .bmw-2 .todo.completed span {
@@ -1606,14 +1597,11 @@ footer {
 .bmw-2 .todo.completed i {
     color: white;
     font-size: 14px;
-    /* Adjust checkmark size */
 }
 
-/* Focus Styles */
 .bmw-2 .todo:focus,
 .bmw-2 .todo-1:focus {
     outline: 3px solid #2196F3;
-    /* Blue outline for focus */
     background-color: #f0f8ff;
-    /* Slight background change on focus */
 }
+
