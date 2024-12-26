@@ -481,7 +481,7 @@ header {
 }
 
 /* Individual Card Styling */
-.card-3 {
+.item {
     background-image: linear-gradient(to top, rgba(231, 249, 253, 1) 0%, rgba(231, 249, 253, 0) 100%);
     border-radius: 30px;
     width: 410px;
@@ -494,7 +494,7 @@ header {
     /* Smooth transition on hover */
 }
 
-.card-3:hover {
+.item:hover {
     transform: translateY(-10px);
     /* Lift the card on hover */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -502,7 +502,7 @@ header {
 }
 
 /* Card Image Styling */
-.card-3 img {
+.item img {
     position: relative;
     height: 250px;
     margin: 0 auto;
@@ -514,13 +514,13 @@ header {
     /* Smooth zoom effect */
 }
 
-.card-3 img:hover {
+.item img:hover {
     transform: scale(1.05);
     /* Slight zoom effect on hover */
 }
 
 /* Card Heading Styling */
-.card-3 h2 {
+.item h2 {
     font-weight: 600;
     margin-top: 30px;
     font-size: 24px;
@@ -589,7 +589,7 @@ header {
         padding: 0;
     }
 
-    .card-3 {
+    .item {
         width: 100%;
         margin-bottom: 40px;
     }
