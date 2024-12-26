@@ -1276,4 +1276,72 @@ button.next::before {
     /* Smooth transition */
     transition: transform 0.5s ease-in-out;
     height: 100%;
+
+}
+
+#favorites-container {
+    margin-top: 20px;
+    padding: 10px;
+}
+/* Image default style */
+.item img {
+    filter: none; /* No filter */
+    transition: filter 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Active (favorited) style */
+.item img.active {
+    filter: hue-rotate(180deg); /* Red filter */
+}
+
+/* Button hover effect */
+.add-to-favorites {
+    cursor: pointer;
+    transition: transform 0.3s ease fill 0.3s ease;
+}
+
+.add-to-favorites:hover {
+    transform: scale(1.1);
+}
+
+/* SVG color change */
+.add-to-favorites svg {
+    transition: fill 0.3s ease;
+}
+
+.add-to-favorites.favorited svg {
+    fill: red;
+}
+
+
+/* Add a fade-in animation for added items */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Add a fade-out animation for removed items */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+}
+
+.fade-out {
+    animation: fadeOut 0.3s ease-in-out;
 }
