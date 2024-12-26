@@ -156,6 +156,7 @@ text-decoration-skip-ink: none;
     max-height: 500px;
     object-fit: cover;
     margin: 20px 0;
+    image-rendering: optimizeQuality;
     border-radius: 30px;
     
   }
@@ -188,7 +189,7 @@ opacity: 0px;
   
   .faq-image {
     width: 200%;
-    max-width: 700px;
+    max-width: 500px;
     margin: 10px 0;
     border-radius: 30px;
   }
