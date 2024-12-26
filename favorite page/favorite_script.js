@@ -35,22 +35,50 @@ function addToFavPage(itemDetails) {
     itemDiv.classList.add('item', 'fade-in'); // Add fade-in animation
     itemDiv.setAttribute('id', itemDetails.id);
 
-    // Add the image
-    if (itemDetails.imageSrc) {
+
+        // Create the button with the SVG icon (same as original item button)
+        const iconDiv = document.createElement('div');
+        iconDiv.classList.add('card-icon'); 
+        itemDiv.appendChild(iconDiv);
+
+        const addButton = document.createElement('button');
+        addButton.classList.add('add-to-favorites');
+        addButton.style.backgroundColor = 'transparent';
+        addButton.style.borderColor = 'transparent';
+        iconDiv.appendChild(addButton);
+
+        const svgIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svgIcon.setAttribute('viewBox', '0 0 24 24');
+        svgIcon.setAttribute('width', '25');
+        svgIcon.setAttribute('height', '25');
+        svgIcon.setAttribute('fill', 'rgba(219, 226, 229, 1)');
+        addButton.appendChild(svgIcon);
+    
+        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path.setAttribute(
+            'd',
+            "M17.3631 11.0453C18.767 9.65157 21.0432 9.65157 22.4471 11.0453C23.851 12.439 23.851 14.6987 22.4471 16.0924L17 21.5L11.5529 16.0924C10.149 14.6987 10.149 12.439 11.5529 11.0453C12.9568 9.65157 15.233 9.65157 16.6369 11.0453L16.9996 11.4051L17.3631 11.0453ZM19.2426 4.75736C20.1831 5.69977 20.7461 6.87453 20.9318 8.09485C19.5993 7.84749 18.1932 8.08543 17.0001 8.808C14.8491 7.50516 12.0056 7.7777 10.1439 9.62594C8.01293 11.7414 7.95374 15.1405 9.96628 17.3273L10.1439 17.5117L12.565 19.916L10.9999 21.485L2.52138 12.993C0.417048 10.637 0.495706 7.01901 2.75736 4.75736C5.02157 2.49315 8.64519 2.41687 11.001 4.52853C13.35 2.42 16.98 2.49 19.2426 4.75736Z"
+        );
+        svgIcon.appendChild(path);
+        
+        
+
+        // Add the image
+    
         const img = document.createElement('img');
         img.src = itemDetails.imageSrc;
         img.alt = itemDetails.title;
         itemDiv.appendChild(img);
-    }
+    
 
     // Add the title
     const title = document.createElement('h2');
     title.textContent = itemDetails.title;
     itemDiv.appendChild(title);
 
-    // Add the Timer div
+    // Add the Timer-restaurant div
     const timerDiv = document.createElement('div');
-    timerDiv.classList.add('Timer');
+    timerDiv.classList.add('Timer-restaurant');
 
     // Add the first inner div for timer
     const timerInnerDiv1 = document.createElement('div');
@@ -73,39 +101,13 @@ function addToFavPage(itemDetails) {
     timerIcon2.appendChild(timerIconElem2);
 
     const timerText2 = document.createElement('p');
-    timerText2.textContent = itemDetails.details || "Details"; // Default text if no span is available
+    timerText2.textContent = document.querySelector('p') || "Details"; // Default text if no span is available
+
     timerInnerDiv2.appendChild(timerIcon2);
     timerInnerDiv2.appendChild(timerText2);
     timerDiv.appendChild(timerInnerDiv2);
 
     itemDiv.appendChild(timerDiv);
-
-    // Add the button div
-    const buttonDiv = document.createElement('div');
-    buttonDiv.classList.add('icon');
-
-    // Create the button with the SVG icon (same as original item button)
-    const addButton = document.createElement('button');
-    addButton.classList.add('add-to-favorites');
-    addButton.style.backgroundColor = 'transparent';
-    addButton.style.borderColor = 'transparent';
-
-    const svgIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    svgIcon.setAttribute('viewBox', '0 0 24 24');
-    svgIcon.setAttribute('width', '25');
-    svgIcon.setAttribute('height', '25');
-    svgIcon.setAttribute('fill', 'rgba(219, 226, 229, 1)');
-
-    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    path.setAttribute(
-        'd',
-        "M17.3631 11.0453C18.767 9.65157 21.0432 9.65157 22.4471 11.0453C23.851 12.439 23.851 14.6987 22.4471 16.0924L17 21.5L11.5529 16.0924C10.149 14.6987 10.149 12.439 11.5529 11.0453C12.9568 9.65157 15.233 9.65157 16.6369 11.0453L16.9996 11.4051L17.3631 11.0453ZM19.2426 4.75736C20.1831 5.69977 20.7461 6.87453 20.9318 8.09485C19.5993 7.84749 18.1932 8.08543 17.0001 8.808C14.8491 7.50516 12.0056 7.7777 10.1439 9.62594C8.01293 11.7414 7.95374 15.1405 9.96628 17.3273L10.1439 17.5117L12.565 19.916L10.9999 21.485L2.52138 12.993C0.417048 10.637 0.495706 7.01901 2.75736 4.75736C5.02157 2.49315 8.64519 2.41687 11.001 4.52853C13.35 2.42 16.98 2.49 19.2426 4.75736Z"
-    );
-    svgIcon.appendChild(path);
-    addButton.appendChild(svgIcon);
-
-    buttonDiv.appendChild(addButton);
-    itemDiv.appendChild(buttonDiv);
 
     // Append the item div to the Favorites container
     favoritesContainer.appendChild(itemDiv);
