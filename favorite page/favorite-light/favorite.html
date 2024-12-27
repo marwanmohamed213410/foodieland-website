@@ -21,16 +21,16 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <!-- Render all elements normaly -->
-    <link rel="stylesheet" href="../CSS/normalize.css" />
+    <link rel="stylesheet" href="../../CSS/normalize.css" />
     <!-- linking main css file -->
     <link rel="stylesheet" href="favorite_style.css">
     <!-- font awsome library -->
-    <link rel="stylesheet" href="../CSS/all.min.css" />
+    <link rel="stylesheet" href="../../CSS/all.min.css" />
     <!-- boxicons library -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!-- adding fav icon -->
     <link rel="shortcut icon" href="assets/home page/f84cef4b8a52c8b0378a13f08550d937.png" type="image/x-icon">
-    <link rel="stylesheet" href="../category-pages.css">
+    <link rel="stylesheet" href="../../category-pages.css">
 
 
 
@@ -137,7 +137,7 @@
     </header>
 
 
-    <div class="card-test" id="favorites-container" style="margin-top: 50px;">
+    <div class="card-test" id="favorites-container" style="margin-top: 50px; margin-bottom: 50px;">
         <!-- Favorites will be dynamically inserted here -->
 
     </div>
@@ -155,10 +155,10 @@
                 <button class="subscribe-button" type="submit">Subscribe</button>
             </div>
             <div class="feed-back-img-1">
-                <img src="/foodpics/202020.png" alt="">
+                <img src="../../foodpics/202020.png" alt="">
             </div>
             <div class="feed-back-img-2">
-                <img src="/foodpics/303030.png" alt="">
+                <img src="../../foodpics/303030.png" alt="">
             </div>
 
         </div>
@@ -224,7 +224,7 @@
                     localStorage.setItem("mode", "dark");
 
                     // إعادة التوجيه إلى صفحة معينة عندما يكون الوضع الداكن مفعل
-                    window.location.href = "http://127.0.0.1:5501/meat-black.html";
+                    window.location.href = "../favorite-dark/favorite_dark.html";
                 } else {
                     // تفعيل وضع الفاتح
                     document.body.classList.add("light-mode");
@@ -234,14 +234,14 @@
                     localStorage.setItem("mode", "light");
 
                     // إعادة التوجيه إلى صفحة معينة عندما يكون الوضع الفاتح مفعل
-                    window.location.href = "http://127.0.0.1:5501/meat1.html";
+                    window.location.href = "../favorite-light/favorite.html";
                 }
             });
         </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="favorite_script.js"></script>
+    <script src="../favorite_script.js"></script>
 </body>
 
 </html>

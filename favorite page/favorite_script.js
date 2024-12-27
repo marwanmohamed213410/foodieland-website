@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
  */
 function addToFavPage(itemDetails) {
     const favoritesContainer = document.getElementById('favorites-container');
+    favoritesContainer.classList.add('row' ,'g-4' ,'mb-4' ,'d-flex' ,'justify-content-flex-start','position-relative');
     if (!favoritesContainer) {
         console.error('Favorites container not found!');
         return;
@@ -32,13 +33,13 @@ function addToFavPage(itemDetails) {
 
     // Create a new item div
     const itemDiv = document.createElement('div');
-    itemDiv.classList.add('item', 'fade-in'); // Add fade-in animation
+    itemDiv.classList.add('item', 'fade-in','col-6' ,'col-xl-3', 'col-xxl-3', 'position-relative'); // Add fade-in animation
     itemDiv.setAttribute('id', itemDetails.id);
 
 
         // Create the button with the SVG icon (same as original item button)
         const iconDiv = document.createElement('div');
-        iconDiv.classList.add('card-icon'); 
+        iconDiv.classList.add('card-icon','position-absolute', 'end-0', 'top-0',  'me-4', 'mt-3'); 
         itemDiv.appendChild(iconDiv);
 
         const addButton = document.createElement('button');
@@ -67,29 +68,32 @@ function addToFavPage(itemDetails) {
 
         // Add the image
         const img = document.createElement('img');
+        img.classList.add('card-img-top', 'w-100' ,'h-100');
         img.src = itemDetails.imageSrc;
         img.alt = itemDetails.title;
         itemLink.appendChild(img);
 
     // Add the title
     const title = document.createElement('h2');
+    title.classList.add('card-text' ,'ps-2', 'pe-2' ,'mb-2' ,'pt-3' ,'pb-3');
     title.textContent = itemDetails.title;
     itemLink.appendChild(title);
 
     // Add the Timer-restaurant div
     const timerDiv = document.createElement('div');
-    timerDiv.classList.add('Timer-restaurant');
+    timerDiv.classList.add('Timer-restaurant','col','mt-3','align-content-center','d-flex','pb-2');
 
     // Add the first inner div for timer
     const timerInnerDiv1 = document.createElement('div');
     const timerIcon1 = document.createElement('span');
     const timerIconElem1 = document.createElement('i');
-    timerIconElem1.classList.add('ri-timer-fill');
+    timerInnerDiv1.classList.add('fa' ,'fa-clock', 'd-flex' ,'ms-2' ,'col-5');
     timerIcon1.appendChild(timerIconElem1);
+    timerInnerDiv1.appendChild(timerIcon1);
 
     const timerText1 = document.createElement('span');
     timerText1.textContent = itemDetails.timer1 || "30 minutes"; // Example value
-    timerInnerDiv1.appendChild(timerIcon1);
+    timerText1.classList.add('under-card','ms-2');
     timerInnerDiv1.appendChild(timerText1);
     timerDiv.appendChild(timerInnerDiv1);
 
@@ -97,11 +101,12 @@ function addToFavPage(itemDetails) {
     const timerInnerDiv2 = document.createElement('div');
     const timerIcon2 = document.createElement('span');
     const timerIconElem2 = document.createElement('i');
-    timerIconElem2.classList.add('ri-restaurant-fill');
+    timerInnerDiv2.classList.add('fa' ,'fa-clock', 'd-flex' ,'ms-2' ,'col-5');
     timerIcon2.appendChild(timerIconElem2);
 
     const timerText2 = document.createElement('p');
     timerText2.textContent = "Details"; // Default text if no span is available
+    timerText2.classList.add('under-card','ms-2');
 
     timerInnerDiv2.appendChild(timerIcon2);
     timerInnerDiv2.appendChild(timerText2);
