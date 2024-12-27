@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
  */
 function addToFavPage(itemDetails) {
     const favoritesContainer = document.getElementById('favorites-container');
-    favoritesContainer.classList.add('row' ,'g-4' ,'mb-4' ,'d-flex' ,'justify-content-flex-start','position-relative');
     if (!favoritesContainer) {
         console.error('Favorites container not found!');
         return;
