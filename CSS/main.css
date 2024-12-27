@@ -474,10 +474,8 @@ header {
     flex-wrap: wrap;
     margin-top: 80px;
     margin-bottom: 60px;
-    margin-left: 50px;
     gap: 40px;
     justify-content: center;
-    padding: 0 10px;
 }
 
 /* Individual Card Styling */
