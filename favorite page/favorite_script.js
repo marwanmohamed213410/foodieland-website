@@ -104,7 +104,7 @@ function addToFavPage(itemDetails) {
     timerIcon2.appendChild(timerIconElem2);
 
     const timerText2 = document.createElement('p');
-    timerText2.textContent = "Details"; // Default text if no span is available
+    timerText2.textContent = itemDetails.timer1 ||"Details"; // Default text if no span is available
     timerText2.classList.add('under-card','ms-2');
 
     timerInnerDiv2.appendChild(timerIcon2);
@@ -145,8 +145,9 @@ function toggleFavorite(buttonElement) {
         let itemDetails = {
             id: itemElement.getAttribute('id'),
             title: itemElement.querySelector('h2') ? itemElement.querySelector('h2').textContent : '',
-            imageSrc: itemElement.querySelector('img') ? itemElement.querySelector('img').src : ''
-        };
+            imageSrc: itemElement.querySelector('img') ? itemElement.querySelector('img').src : '',
+            url: itemElement.querySelector('a') ? itemElement.querySelector('a').href : '',
+            };
 
         // Check if the item is already in favorites
         const itemIndex = favoritesArray.findIndex(fav => fav.id === itemDetails.id);
