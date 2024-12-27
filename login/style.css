@@ -71,6 +71,8 @@ body {
     text-align: center;
 
 }
+
+
 .input-box{
     position:relative ;
     width: 100%;
@@ -92,6 +94,8 @@ body {
 .input-box #login-span-email,
 .input-box #login-span-password {
     position: absolute;
+    top: 53px;
+    left: -1px;
     font-size: 10px;
     margin-left: 10px;
     color: red;
