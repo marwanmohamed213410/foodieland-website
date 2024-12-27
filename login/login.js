@@ -1,58 +1,60 @@
-const form = document.querySelector('#login-form');
-const email = document.querySelector('#login-email');
-const password = document.querySelector('#login-password');
-const spanEmail = document.querySelector('#login-span-email');
-const spanPass = document.querySelector('#login-span-password');
+let form = document.querySelector('#login-form');
+let email = document.querySelector('#login-email');
+let password = document.querySelector('#login-password');
+let spanEmail = document.querySelector('#login-span-email');
+let spanPass = document.querySelector('#login-span-password');
+let emailLabel = document.querySelector('label[for="login-email"]');
+let passwordLabel = document.querySelector('label[for="login-password"]');
 
-form.addEventListener('submit', function (event) {
+form.addEventListener('submit' , function(event){
     event.preventDefault();
-
-    const emailValue = email.value;
-    const passValue = password.value;
-
-    // Get users array from localStorage
-    let users = JSON.parse(localStorage.getItem('users')) || [];
-
-    // Check if the email exists in the users array
-    const user = users.find(user => user.email === emailValue);
-
-    if (!user) {
-        spanEmail.textContent = "Email not found";
-        spanPass.textContent = ""; // Clear password error message
-        return;
+    if (email.value === ''){
+        spanEmail.textContent="Please Enter Your Email";
+    } else if (email.value !== '') {
+        spanEmail.textContent="";
     }
-
-    // Check if the password matches
-    if (user.password !== passValue) {
-        spanPass.textContent = "Incorrect password";
-        spanEmail.textContent = ""; // Clear email error message
-        return;
+    if (password.value === ''){
+        spanPass.textContent="Please Enter Your Password";
     }
+    else if (password.value !== '') {
+        spanPass.textContent="";
+    }
+    let getData = localStorage.getItem(email.value);
+    let objectJson = JSON.parse(getData);
 
-    // If both email and password are correct
-    spanEmail.textContent = ""; // Clear any previous error message
-    spanPass.textContent = "";
-
-    console.log("done");
-    // Optionally, redirect to the user's dashboard or home page after successful login
-    window.location.href = '../index.html'; // Adjust the URL as needed
+    if (email.value === objectJson.email && password.value === objectJson.password ){
+        window.location.href = 'home.html';
+    }else {
+        spanPass.textContent="Email or Password Are Wrong";
+    }
 });
 
-// Input listeners
+
+
 email.addEventListener('input', function () {
     if (email.value !== '') {
-        spanEmail.textContent = "";
+        emailLabel.style.top = '7px'; 
+        spanEmail.textContent = '';  
     } else {
-        spanEmail.textContent = "You Should Enter Your Email";
-        spanEmail.style.color = 'blue';
+        emailLabel.style.top = '50%';
+        spanEmail.textContent = 'You should enter your email'; 
     }
 });
-
 password.addEventListener('input', function () {
     if (password.value !== '') {
-        spanPass.textContent = "";
+        passwordLabel.style.top = '7px';
+        spanPass.textContent = '';  
     } else {
-        spanPass.textContent = "You Should Enter Your Password";
-        spanPass.style.color = 'blue';
+        passwordLabel.style.top = '50%';
+        spanPass.textContent = 'You should enter your password'; 
+    }
+});
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (emailInput.value === '') {
+        spanEmail.textContent = 'Please enter your email';
+    }
+    if (passwordInput.value === '') {
+        spanPass.textContent = 'Please enter your password';
     }
 });
