@@ -1,0 +1,558 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* تنسيق عام */
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 2.2;
+    background-color: #f9fafc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #0f1010;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.page-name {
+    font-family: "Lobster", cursive;
+    font-size: 24px;
+}
+
+/* الهيدر والقائمة */
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar li {
+    display: inline-block;
+}
+
+header .navbar a {
+    font-size: 1rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+header .navbar a:hover {
+    color: #007bff;
+}
+
+header .main i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #555;
+}
+
+header .main i:hover {
+    color: #007bff;
+}
+
+/* القسم الرئيسي (Hero Section) */
+.hero-section {
+    display: flex;
+    background-color: #fff;
+    padding: 9rem 2rem 4rem 2rem;
+    margin-bottom: 6rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pics {
+    width: 400px;
+    height: 350px;
+    border-radius: 8px;
+    margin-left: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: rgba(227, 187, 58, 0.856);
+    margin-bottom: 1.5rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: justify;
+}
+
+/* قسم "Our Mission" و "Our Story" */
+.hero-section {
+    display: flex;
+    background-color: #fff;
+    padding: 4rem 2rem;
+    margin-bottom: 6rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-zero{
+    width: 550px;
+    height: 350px;
+    border-radius: 2.8px;
+    margin-left: 27px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 9px 12px 15px #81acd9;
+}
+
+
+
+.pics {
+    width: 400px;
+    height: 350px;
+    border-radius: 8px;
+    margin-left: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+}
+
+.pic2 {
+    width: 1200px;
+    height: 350px;
+    border-radius: 5px;
+    margin-left: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 9px 12px 15px rgba(227, 187, 58, 0.856);
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #0d0dba;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: justify;
+}
+
+#mission,
+#story {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+#mission h2,
+#story h2 {
+    font-size: 2.5rem;
+    color: #aa8d0c;
+    margin-bottom: 1rem;
+}
+
+#mission p,
+#story p {
+    font-size: 1.1rem;
+    color: #0f0f0f;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.navbar-mission {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 9px 12px 15px rgba(227, 187, 58, 0.856);   
+}
+
+/* Join Our Community*/
+.cta-section {
+    background-color: #f1f1f1;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(14, 14, 14, 0.856);
+}
+
+.cta-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.cta-section p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cta-section input {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cta-section button {
+    padding: 0.5rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-section button:hover {
+    background-color: #0056b3;
+}
+
+/* الفوتر */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* تحسينات إضافية واستجابة */
+@media (max-width: 768px) {
+    header .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-section {
+        padding: 2rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+}
+
+.container-7 {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 100px;
+    background-color: #e7f9fd;
+    overflow: hidden;
+    border-radius: 50px;
+    padding: 20px;
+    position: relative;
+    height: 442px;
+}
+
+.feed-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    min-width: 60%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.feed-back h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58.09px;
+    letter-spacing: -4%;
+    margin-bottom: 35px;
+}
+
+.feed-back p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    width: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* Input */
+.email-input {
+    width: 100%;
+    padding: 15px 160px 15px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.email-input::placeholder {
+    color: #999;
+}
+
+.subscribe-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feed-back img {
+    position: absolute;
+    width: 409.54px;
+    height: 400.08px;
+    transform: rotate(45deg);
+}
+
+.feed-back-img-1 {
+    position: absolute;
+    bottom: 250px;
+    left: -100px;
+    transform: translateX(-150px);
+}
+
+.feed-back-img-2 {
+    position: absolute;
+    bottom: 100px;
+    right: 70px;
+}
+
+.home-tab {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#offcanvasNavbar {
+    width: 200px;
+}
+
+/* تأثير عند الضغط على الكرت */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* لتحديد المدة والطريقة */
+}
+
+/* تكبير الكرت عند المرور */
+.card-hover:hover {
+    transform: scale(1.05);
+    /* تكبير الكرت بنسبة 5% عند المرور */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* إضافة ظلال عند المرور */
+}
+
+/* تصغير الكرت عند الضغط */
+.card-hover:active {
+    transform: scale(0.98);
+    /* تصغير الكرت عند الضغط */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* تقليل الظلال عند الضغط */
+}
+
+.card {
+    height: 100% !important;
+    width: 100% !important;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+
+.card-img-top {
+    height: 230px !important;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    padding: 60px;
+}
+
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: rgba(0, 0, 0, 0.2) solid 2px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.footer-text h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+    letter-spacing: -0.08px;
+    margin-bottom: 10px;
+}
+
+.footer-text p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-list ul {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-list ul li {
+    margin-bottom: 10px;
+}
+
+.footer-list ul li a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 10px;
+}
+
+.footer-end {
+    margin-top: 25px;
+    display: flex;
+}
+
+.footer-end-1 {
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.footer-end-1 p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22.68px;
+    letter-spacing: -2%;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+
+}
+
+.footer-end-1 span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22.68px;
+    letter-spacing: -2%;
+    color: rgba(163, 98, 1, 0.555);
+    text-align: center;
+
+}
+
+.footer-icon {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+
+}
+
+.footer-icon a {
+
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.toggle-btn-container {
+    position: absolute;
+    top: 20px;
+    /* المسافة من الأعلى */
+    right: 20px;
+    /* المسافة من اليمين */
+    background-color: #0f172a;
+    padding: 10px 15px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.moon,
+.sun {
+    font-size: 1.2rem;
+    color: rgba(234, 201, 51, 0.834);
+}
+
+.moon {
+    font-size: 1.2rem;
+    color: black;
+}
