@@ -468,17 +468,18 @@ header {
     text-align: center;
 }
 
-/* Card Layout Styling */
+
 .card-test {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 80px;
-    margin-bottom: 60px;
-    gap: 40px;
+    gap: 45px;
     justify-content: center;
+    align-items: center;
+    margin: 0;
+    transform: translateX(20px);
+    padding-top: 20px;
 }
 
-/* Individual Card Styling */
 .item {
     background-image: linear-gradient(to top, rgba(231, 249, 253, 1) 0%, rgba(231, 249, 253, 0) 100%);
     border-radius: 30px;
