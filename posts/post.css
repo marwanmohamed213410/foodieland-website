@@ -54,7 +54,11 @@
     display: block;
 }
 
-/* ////////// */
+/* navbar */
+
+/* /////code///// */
+
+/* ////end//// */
 
 body {
     font-family: 'Inter', sans-serif;
@@ -231,6 +235,7 @@ p {
     font-size: 1.5rem;
     color: var(--sec-text-color);
     margin-bottom: 5em;
+    margin-right: 5px;
 }
 
 .content img {
@@ -272,7 +277,15 @@ p {
     color: #0E73C9;
     fill: #0E73C9;
 }
-
+@media (max-width: 1330px) {
+    .share{
+        display: none;
+        float: none;
+        clear: both;
+        width: 100%;
+        margin-right: 5px;
+    }
+}
 /* Blockquote */
 
 .blockquote {
@@ -445,13 +458,22 @@ p {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     /* Enhance shadow on hover */
 }
-
-.card-3 span {
+.add-to-favorites {
     cursor: pointer;
+    transition: transform 0.3s ease fill 0.3s ease;
 }
 
-.card-3 span svg:hover {
-    fill: rgba(231, 110, 110, 1);
+.add-to-favorites:hover {
+    transform: scale(1.1);
+}
+
+/* SVG color change */
+.add-to-favorites svg {
+    transition: fill 0.3s ease;
+}
+
+.add-to-favorites.favorited svg {
+    fill: red;
 }
 
 /* Card Image Styling */
