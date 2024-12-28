@@ -4,6 +4,32 @@
     font-size:24px ;
 }
 
+.links-container {
+    display: flex;              /* Use flexbox for layout */
+    flex-direction: row;        /* Ensure the layout is always in a row */
+    align-items: center;        /* Center the items vertically */
+    gap: 10px;                  /* Add spacing between buttons */
+}
+
+.links-container a {
+    border: solid black;    /* Add border for buttons */
+    border-radius: 8px;         /* Rounded corners */
+    padding: 4px 10px;          /* Adjust padding */
+    text-decoration: none;      /* Remove underline */
+    display: inline-block;      /* Ensure buttons behave properly */
+}
+
+.links-container a:hover {
+    border-color: #0e73c9;
+}
+
+@media screen and (max-width: 600px) {
+    /* Adjust spacing or padding on smaller screens if needed */
+    .links-container a {
+        padding: 6px 12px;
+    }
+}
+
 .text-dark,
 .under-meat {
     font-family: "Inter", sans-serif;
