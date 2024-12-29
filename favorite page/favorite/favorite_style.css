@@ -5,18 +5,18 @@
 }
 
 .links-container {
-    display: flex;              /* Use flexbox for layout */
-    flex-direction: row;        /* Ensure the layout is always in a row */
-    align-items: center;        /* Center the items vertically */
-    gap: 10px;                  /* Add spacing between buttons */
+    display: flex;              
+    flex-direction: row;       
+    align-items: center;        
+    gap: 10px;                  
 }
 
 .links-container a {
-    border: solid black;    /* Add border for buttons */
-    border-radius: 8px;         /* Rounded corners */
-    padding: 4px 10px;          /* Adjust padding */
-    text-decoration: none;      /* Remove underline */
-    display: inline-block;      /* Ensure buttons behave properly */
+    border: solid black;    
+    border-radius: 8px;         
+    padding: 4px 10px;          
+    text-decoration: none;    
+    display: inline-block;      
 }
 
 .links-container a:hover {
@@ -24,7 +24,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    /* Adjust spacing or padding on smaller screens if needed */
     .links-container a {
         padding: 6px 12px;
     }
@@ -368,11 +367,6 @@ a:visited {
     outline: none;
     box-sizing: border-box;
 }
-
-/* .email-input::placeholder {
-    color: #999;
-} */
-
 
 .subscribe-button {
     position: absolute;
