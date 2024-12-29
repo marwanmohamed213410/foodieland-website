@@ -74,7 +74,7 @@ function addToFavPage(itemDetails) {
 
     // Add the title
     const title = document.createElement('h2');
-    title.classList.add('card-text' ,'ps-2', 'pe-2' ,'mb-2' ,'pt-3' ,'pb-3');
+    title.classList.add('ps-2', 'pe-2' ,'mb-2' ,'pt-3' ,'pb-3');
     title.textContent = itemDetails.title;
     itemLink.appendChild(title);
 
