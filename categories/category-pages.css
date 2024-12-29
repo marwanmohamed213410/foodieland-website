@@ -3,6 +3,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
+.links-container {
+  display: flex;              
+  flex-direction: row;       
+  align-items: center;        
+  gap: 10px;                  
+}
+
+.links-container a {
+  border: solid black;    
+  border-radius: 8px;         
+  padding: 4px 10px;          
+  text-decoration: none;    
+  display: inline-block;      
+}
+
+.links-container a:hover {
+  border-color: #0e73c9;
+}
+
+@media screen and (max-width: 600px) {
+  .links-container a {
+      padding: 6px 12px;
+  }
+}
+
 .text-dark ,.under-meat  {
 
   font-family: "Inter", sans-serif;
@@ -47,24 +72,41 @@ display: inline;
 
 }
 
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social a {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.social a:hover {
+  color: #0e73c9;
+  fill: #0e73c9;
+}
+
  
-  .home-tab {
-    padding-left: 20px;
-    padding-right: 20px;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    text-decoration: bold;
-    transition: color 0.3s ease;
-  }
+.home-tab {
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: bold;
+  transition: color 0.3s ease;
+}
 
-  .home-tab:hover {
-    color: #0E73C9;
-  }
-
+.home-tab:hover {
+  color: #0e73c9;
+}
 
 #offcanvasNavbar {
-  width: 200px; 
+  width: 200px;
 }
 
   /* تأثير عند الضغط على الكرت */
@@ -315,11 +357,18 @@ display: inline;
   align-items: center;
   gap: 10px;
 }
-.moon, .sun {
-  font-size: 1.2rem;
-  color: rgba(234, 201, 51, 0.834);
+a {
+  text-decoration: none;
 }
-.moon{
-  font-size: 1.2rem;
-  color: black ;
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
 }

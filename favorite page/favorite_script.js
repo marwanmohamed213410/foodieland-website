@@ -140,7 +140,7 @@ function toggleFavorite(buttonElement) {
     const itemElement = buttonElement.closest('.item'); // Get the parent item div
     const svgIcon = buttonElement.querySelector('svg'); // Get the SVG icon inside the button
 
-    if (itemElement && svgIcon) {
+    if (itemElement) {
         // Extract the item details
         let itemDetails = {
             id: itemElement.getAttribute('id'),
@@ -184,7 +184,8 @@ function toggleFavorite(buttonElement) {
             // Change the SVG color to default (not favorited)
             svgIcon.setAttribute('fill', 'rgba(219, 226, 229, 1)');
         }
-    } else {
+    } 
+    else {
         console.error('Item element or SVG icon not found!');
     }
 }
