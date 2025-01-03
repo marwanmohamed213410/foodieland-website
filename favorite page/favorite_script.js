@@ -100,7 +100,7 @@ function addToFavPage(itemDetails) {
     const timerInnerDiv2 = document.createElement('div');
     const timerIcon2 = document.createElement('span');
     const timerIconElem2 = document.createElement('i');
-    timerInnerDiv2.classList.add('fa' ,'fa-clock', 'd-flex' ,'ms-2' ,'col-5');
+    timerInnerDiv2.classList.add('fa' ,'fa-utensils', 'd-flex' ,'ms-2' ,'col-5');
     timerIcon2.appendChild(timerIconElem2);
 
     const timerText2 = document.createElement('p');
