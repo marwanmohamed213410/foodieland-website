@@ -67,6 +67,7 @@ p {
 .profile {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .name-user {

@@ -41,6 +41,7 @@
   align-items: center;
   color: black;
   text-decoration: bold;
+  font-size: 19px;
   transition: color 0.3s ease;
 }
 
