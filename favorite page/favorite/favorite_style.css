@@ -10,33 +10,9 @@
     flex-wrap: wrap;
     margin-top: 80px;
     margin-bottom: 60px;
-    margin-left: 50px;
+    margin-left: 150px;
     gap: 40px;
     justify-content: flex-start;
-    padding: 0 10px;
-}
-
-@media (max-width: 768px) {
-    .card-test {
-        margin-left: 0;
-        gap: 20px;
-        padding: 0;
-    }
-
-    .item {
-        width: 100%;
-        margin-bottom: 40px;
-    }
-
-    .container-3-text h2 {
-        font-size: 36px;
-        line-height: 48px;
-    }
-
-    .container-3-text p {
-        font-size: 14px;
-        line-height: 24px;
-    }
 }
 
 /* Individual Card Styling */
@@ -150,11 +126,6 @@
 .card-icon:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     /* Enhanced shadow on hover */
-}
-
-#favorites-container {
-    margin-top: 20px;
-    padding: 10px;
 }
 
 /* Image default style */
