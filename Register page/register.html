@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/register.css">
+  <script type="text/javascript" src="../switch.js" defer></script>
+  <title>Registration</title>
+</head>
+
+<body>
+  <nav>
+    <button id="theme-switch">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+        <path
+          d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+        <path
+          d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+      </svg>
+    </button>
+  </nav>
+  <section class="vh-100">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="card col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="card-body p-5" style="z-index:2; background: white;">
+              <h2 class="text-uppercase text-center mb-5">Registration</h2>
+              <!-- form start -->
+              <form id="signup-form">
+                <!-- input&label for Username -->
+                <div data-mdb-input-init class="form-floating mb-4">
+                  <span><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAO5JREFUSEvVldENwjAMRK+bwCTAJjAJMAlsApsAkwCHEtS6jm0ligSWqvaj9bPPznVA5xg650cUsACwB7B9X3cAVwDH9GzWGAGsAVyULATtEqwIiQBuANiBFoQsrRY8ACU5OXPaWF14gEPS3mJwFnxPDQ9Q0n+cjHM41wKoPQfcbQYszOrC1J8fexLlzvM5IIyRV5T35nPg5fhtANdvleYgK82W8ahZU2rNA1baHg2m2oY25Mjul3SfbZUGsLzHG/jMmyQgYg0eZGIdEkDdaXAtwX8FpfqEBLTIk3NOZJKAZ0vpo2+/eaNWUc39f8ALCDsoGfKFTMgAAAAASUVORK5CYII=" /></span>
+                  <input type="text" id="floatingInput" class="username form-control shadow-none form-control-lg"
+                    placeholder="Enter your name" />
+                  <label class="form-label" for="floatingInput">Your Name</label>
+                  <span id="signup-span-username"></span>
+                </div>
+                <!-- input&label for Email -->
+                <div data-mdb-input-init class="form-floating mb-4">
+                  <span><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAO9JREFUSEvdldENwjAMRK+bwCTAJjAJMAliEtgENoG+Kq5MpFRJmkqo/qnUOH6+q5N2Wji6hetrXYC9pJukzUzb3pJOkp7U8RY9+pdAWgSQbQz4hMoskFATqH+FjUPzXoEBKH7vFy+FBNTjgkUSYAnXAgjNnKOGkgAKWzJqDhOWYQmDYd/O700CWGAjcnn+TIXr0lvic8zqSQB1KI6SY4D47+ItYRxRaZENMAgAswwLdpEl8TAUAawrIHjtg66HwxRFFcDU2EkfT2pLQO6xqFbw/4CWl904uv4u4uAwjnNv1OR1netxUd66fplF0nOTv61sPBk08/C0AAAAAElFTkSuQmCC" /></span>
+                  <input type="email" id="floatingInput" class="email form-control shadow-none form-control-lg"
+                    placeholder="Enter your email" />
+                  <label class="form-label" for="form3Example3cg">Your Email</label>
+                  <span id="signup-span-email"></span>
+                </div>
+                <!-- input&label for Password -->
+                <div data-mdb-input-init class="form-floating mb-4">
+                  <span><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANJJREFUSEvtlcsNwjAQRCedQCdQCVAJUAl0Ap1AJ8CTNlIQ60wcFMEhviSW7Xn7tRtNPJqJ9TUUsJK0kcSXcZd0fM2vzsAhgK2kU0EIyKEP4gBYfAkBxM7xDxSPFpKW4VHKcQDEgWSWYvk+oLuSFw7wiIPZPqy/hfV4McqDPgCCbt1WkRNw678BkFSS19a8K/V2nZ746I0seSSOBI4ZQNbdgxnAxrVATs/NgG605hDZqv2fEH3TaLx0bzdr1gdcEbxgtd08+Kqwwa7Z4B6cGq107xN01TAZyGBvqwAAAABJRU5ErkJggg==" /></span>
+                  <input type="password" id="form3Example4cg" class="password form-control shadow-none form-control-lg"
+                    placeholder="Enter your password" min="5" max="20" />
+                  <label class="form-label" for="form3Example4cg">Password</label>
+                  <span id="signup-span-pass"></span>
+                </div>
+                <!-- input&label for ConfirmPass -->
+                <div data-mdb-input-init class="form-floating mb-4">
+                  <input type="password" id="form3Example4cdg"
+                    class="confirmPass form-control shadow-none form-control-lg" placeholder="Confirm your password" />
+                  <label class="form-label" for="form3Example4cdg">Confirm your password</label>
+                  <span id="signup-span-conpass"></span>
+                </div>
+                <!-- input&label for Checkbox -->
+                <div class="form-check d-flex justify-content-center mb-5">
+                  <input class="form-check-input border-dark shadow-none me-2" type="checkbox" value=""
+                    id="form2Example3cg" />
+                  <label class="form-check-label" for="form2Example3g">
+                    I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                  </label>
+                </div>
+                <!-- button -->
+                <div class="d-flex justify-content-center ">
+                  <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                    class="btn btn-dark btn-lg text-white w-100">Register</button>
+                </div>
+                <!-- for Login -->
+                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="../login/login.html"
+                    class="fw-bold text-body"><u>Login here</u></a></p>
+              </form>
+              <!-- form end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="register.js"></script>
+</body>
+
+</html>
