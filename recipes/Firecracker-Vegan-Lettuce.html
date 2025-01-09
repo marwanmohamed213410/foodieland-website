@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/recipes.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <script type="text/javascript" src="../switch.js" defer></script>
+    <link rel="stylesheet" href="../nav_bar & footer/nav.css">
+    <link rel="shortcut icon" href="../assets/home_page/f84cef4b8a52c8b0378a13f08550d937.png" type="image/x-icon">
+    <title>Firecracker Vegan Lettuce | Recipe</title>
+</head>
+
+<body style="background-color: var(--base-color);">
+    <nav class="container-fluid navbar fixed-top border bg-white "> <!-- start navbar -->
+        <div class="container-fluid d-inline ">
+            <div class="row d-flex g-lg-5 ">
+                <div class="col-2 p-3 ms-5 d-flex ">
+
+                    <a class="navbar-brand page-name  text-decoration-none me-5 " href="../index.html">
+                        <!--foodieland logo -->
+                        Foodieland<span style="color: rgb(227, 149, 4);">.</span></a>
+                </div> <!-- home tabs  -->
+                <div class="col-8 d-flex align-content-center justify-content-center" style="margin-left: -70px;">
+                    <a class="home-tab d-none d-xxl-flex ps-4 pe-5" href="../index.html">Home</a>
+                    <a class="home-tab d-none d-xxl-flex ps-4 pe-5 "
+                        href="../Blog list page/blog-list-index.html">Blog</a>
+                    <a class="home-tab d-none d-xxl-flex ps-4 pe-5 "
+                        href="../favorite page/favorite/favorite.html">Favorites</a>
+                    <a class="home-tab d-none d-xxl-flex ps-4 pe-5 "
+                        href="../Comments & Reviews/comments.html">Comments</a>
+                    <a class="home-tab d-none d-xxl-flex ps-4 pe-5 "
+                        href="../contact/HTML/contact-page.html">Contact</a>
+                    <a class="home-tab d-none d-xxl-flex flex-shrink-0 ps-4 pe-4  " href="../about/about.html">About
+                        us</a>
+                </div>
+                <div class="col-2 d-flex align-items-center flex-shrink-0 justify-content-end">
+                    <div class="social">
+                        <div class="links-container">
+                            <button id="theme-switch">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#5f6368">
+                                    <path
+                                        d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#5f6368">
+                                    <path
+                                        d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+                                </svg>
+                            </button>
+                            <a class="btn" href="../login/login.html">LogIn</a>
+                            <a class="btn d-none d-sm-block" href="../Register page/register.html">SignUp</a>
+                        </div>
+                    </div>
+                    <div> <!-- hamburger button menu when the screen medium -->
+                        <button class="navbar-toggler d-flex d-xl-flex d-xxl-none ms-4" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!--humberger menu  -->
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+
+                            <div class="offcanvas-header"> <!--header inside the list  -->
+                                <a class="navbar-brand page-name  text-decoration-none me-5 " href="../index.html">
+                                    Foodieland<span style="color: rgb(227, 149, 4);">.</span></a>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body"> <!-- tabs inside the list  -->
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item justify-content-end">
+                                        <a class="nav-link" href="../index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../Blog list page/blog-list-index.html">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../favorite page/favorite/favorite.html">Favorites</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../Comments & Reviews/comments.html">Comments</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../contact/HTML/contact-page.html">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../about/about.html">About us</a>
+                                    </li>
+                                </ul>
+
+                                <div class="social d-flex justify-content-end pt-5 "> <!--icons inside the list  -->
+                                    <a href="https://www.facebook.com" target="_blank"><i
+                                            class="ri-facebook-fill"></i></a>
+                                    <a href="https://www.x.com" target="_blank"><i class="ri-twitter-fill"></i></a>
+                                    <a href="https://www.instagram.com" target="_blank"><i
+                                            class="ri-instagram-fill"></i></a>
+                                </div>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar  -->
+    <!-- end header and nav bar -->
+
+    <!-- name of recipe and details-->
+    <div class='container-1-re'>
+        <div class="japanes-food">
+
+            <h1>Firecracker Vegan Lettuce</h1>
+            <div class="cook-details">
+                <div class="details">
+                    <img src="../assets/home_page/dab521f6cd5545aa07040c074c97ef51.png" alt="">
+                    <div>
+                        <p>john doe</p>
+                        <span>15 March 2022</span>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <i class="ri-timer-fill i"></i>
+                    <div class="">
+                        <p>prep Time</p>
+                        <span>15 Minutes</span>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <i class="ri-timer-fill i"></i>
+                    <div>
+                        <p>COOK TIME</p>
+                        <span>15 Minutes</span>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <i class="ri-restaurant-fill"></i>
+                    <div>
+                        <span>Chicken</span>
+                    </div>
+                </div>
+            </div>
+            <!-- end of recipe name and details -->
+
+            <!-- action buttons -->
+            <div class="behind-icon">
+                <!-- print button -->
+                <div id="print" onclick="window.print()"><i class="ri-printer-line"></i></div>
+                <!-- share button -->
+                <div class="share-container">
+                    <button class="share-btn">
+                        <i class="ri-share-2-line"></i>
+                    </button>
+                    <div class="share-options">
+                        <p class="title">Share</p>
+                        <div class="social-media">
+                            <a href="https://www.whatsapp.com" class="social-media-btn whatsapp" target="_blank"><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com" class="social-media-btn instagram" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.x.com" class="social-media-btn twitter" target="_blank"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com" class="social-media-btn facebook" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com" class="social-media-btn linkedin" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="link-container">
+                            <p class="link">https://example.com/share</p>
+                            <button class="copy-btn">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end action buttons -->
+
+    <!-- video -->
+    <div class="container-2-re">
+        <div class="content-img">
+            <img src="../assets/home_page/141414.png" alt="">
+            <div class="content-img-1">
+                <i class="ri-play-large-fill"></i>
+            </div>
+        </div>
+        <!-- end video -->
+
+        <!-- nutrition information -->
+        <div class="content-text">
+            <h2>Nutrition Information</h2>
+            <div class="content-text-1">
+                <span>Calories</span>
+                <p>219.9 kcal</p>
+            </div>
+            <div class="content-text-1">
+                <span>Total Fat</span>
+                <p>10.7 g</p>
+            </div>
+            <div class="content-text-1">
+                <span>Protein</span>
+                <p>7.9 g</p>
+            </div>
+            <div class="content-text-1">
+                <span>Carbohydrate</span>
+                <p>22.3 g</p>
+            </div>
+            <div class="content-text-1">
+                <span>Cholesterol</span>
+                <p>37.4 mg</p>
+            </div>
+            <p id="content-p">
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </div>
+    </div>
+    <!-- end nutrition information -->
+
+    <!-- description of recipie -->
+    <p id="content-p-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.
+    </p>
+    <!-- end description of recipie -->
+
+    <!-- to do application -->
+    <div class="container-3-rec">
+        <div class="bmw-2">
+            <h2>Ingredients</h2>
+            <p>For main dish</p>
+            <div class="todo-1" data-id="1">
+                <div class="todo-1-text">
+                    <div id="circle"></div>
+                    <span>Lorem ipsum dolor sit amet</span>
+                </div>
+                <div id="line"></div>
+            </div>
+
+            <div class="todo-1" data-id="2">
+                <div class="todo-1-text">
+                    <div id="circle"></div>
+                    <span>Lorem ipsum dolor sit amet</span>
+                </div>
+                <div id="line"></div>
+            </div>
+
+            <div class="todo-1" data-id="3">
+                <div class="todo-1-text">
+                    <div id="circle"></div>
+                    <span>Lorem ipsum dolor sit amet</span>
+                </div>
+                <div id="line"></div>
+            </div>
+
+            <div class="todo-1" data-id="4">
+                <div class="todo-1-text">
+                    <div id="circle"></div>
+                    <span>Lorem ipsum dolor sit amet</span>
+                </div>
+                <div id="line"></div>
+            </div>
+
+            <div class="todo-1" data-id="5">
+                <div class="todo-1-text">
+                    <div id="circle"></div>
+                    <span>Lorem ipsum dolor sit amet</span>
+                </div>
+                <div id="line"></div>
+            </div>
+
+            <p id="souce">For the sauce</p>
+
+            <div class="todo-1" data-id="6">
+                <div class="todo-1-text">
+                    <div id="circle"></div>
+                    <span>Lorem ipsum dolor sit amet</span>
+                </div>
+                <div id="line"></div>
+            </div>
+
+            <div class="todo-1" data-id="7">
+                <div class="todo-1-text">
+                    <div id="circle"></div>
+                    <span>Lorem ipsum dolor sit amet</span>
+                </div>
+                <div id="line"></div>
+            </div>
+
+            <div class="todo-1" data-id="8">
+                <div class="todo-1-text">
+                    <div id="circle"></div>
+                    <span>Lorem ipsum dolor sit amet</span>
+                </div>
+                <div id="line"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-4-rec">
+        <h2>Directions</h2>
+        <div class="todo-1">
+            <div class="todo-1-text">
+                <div id="circle"></div>
+                <span id="todo-span">1.Lorem ipsum dolor sit amet</span>
+            </div>
+            <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+                et dolore magnam aliquam quaerat voluptatem.
+            </p>
+
+            <img src="../assets/home_page/121244.png" alt="">
+            <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+                et dolore magnam aliquam quaerat voluptatem.
+            </p>
+            <div id="line"></div>
+        </div>
+
+        <div class="todo-1">
+            <div class="todo-1-text">
+                <div id="circle"></div>
+                <span id="todo-span">2.Lorem ipsum dolor sit amet</span>
+            </div>
+            <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+                et dolore magnam aliquam quaerat voluptatem.
+            </p>
+            <div id="line"></div>
+        </div>
+
+        <div class="todo-1">
+            <div class="todo-1-text">
+                <div id="circle"></div>
+                <span id="todo-span">3.Lorem ipsum dolor sit amet</span>
+            </div>
+            <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+                et dolore magnam aliquam quaerat voluptatem.
+            </p>
+            <div id="line"></div>
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <!-- tries section -->
+    <div class="card-container-3">
+        <div id="card-test" class="card-test">
+            <div class="item">
+                <div class="card-icon">
+                    <button class="add-to-favorites" style="background-color: transparent; border: transparent;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                            fill="rgba(219, 226, 229, 1)">
+                            <path
+                                d="M17.3631 11.0453C18.767 9.65157 21.0432 9.65157 22.4471 11.0453C23.851 12.439 23.851 14.6987 22.4471 16.0924L17 21.5L11.5529 16.0924C10.149 14.6987 10.149 12.439 11.5529 11.0453C12.9568 9.65157 15.233 9.65157 16.6369 11.0453L16.9996 11.4051L17.3631 11.0453ZM19.2426 4.75736C20.1831 5.69977 20.7461 6.87453 20.9318 8.09485C19.5993 7.84749 18.1932 8.08543 17.0001 8.808C14.8491 7.50516 12.0056 7.7777 10.1439 9.62594C8.01293 11.7414 7.95374 15.1405 9.96628 17.3273L10.1439 17.5117L12.565 19.916L10.9999 21.485L2.52138 12.993C0.417048 10.637 0.495706 7.01901 2.75736 4.75736C5.02157 2.49315 8.64519 2.41687 11.001 4.52853C13.35 2.42 16.98 2.49 19.2426 4.75736Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <img src="../posts/img/7777.png" alt="">
+                <h2>Mixed Tropical Fruit Salad with Superfood Boosts</h2>
+                <div class="Timer-restaurant">
+                    <div>
+                        <span><i class="ri-timer-fill"></i></span><span>15 minutes</span>
+                    </div>
+                    <div>
+                        <span><i class="ri-restaurant-fill"></i></span>
+                        <p>Healthy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card-icon">
+                    <button class="add-to-favorites" style="background-color: transparent; border: transparent;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                            fill="rgba(219, 226, 229, 1)">
+                            <path
+                                d="M17.3631 11.0453C18.767 9.65157 21.0432 9.65157 22.4471 11.0453C23.851 12.439 23.851 14.6987 22.4471 16.0924L17 21.5L11.5529 16.0924C10.149 14.6987 10.149 12.439 11.5529 11.0453C12.9568 9.65157 15.233 9.65157 16.6369 11.0453L16.9996 11.4051L17.3631 11.0453ZM19.2426 4.75736C20.1831 5.69977 20.7461 6.87453 20.9318 8.09485C19.5993 7.84749 18.1932 8.08543 17.0001 8.808C14.8491 7.50516 12.0056 7.7777 10.1439 9.62594C8.01293 11.7414 7.95374 15.1405 9.96628 17.3273L10.1439 17.5117L12.565 19.916L10.9999 21.485L2.52138 12.993C0.417048 10.637 0.495706 7.01901 2.75736 4.75736C5.02157 2.49315 8.64519 2.41687 11.001 4.52853C13.35 2.42 16.98 2.49 19.2426 4.75736Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <img src="../posts/img/8888.png" alt="">
+                <h2>Big and Juicy Wagyu Beef Cheeseburger</h2>
+                <div class="Timer-restaurant">
+                    <div>
+                        <span><i class="ri-timer-fill"></i></span><span>90 minutes</span>
+                    </div>
+                    <div>
+                        <span><i class="ri-restaurant-fill"></i></span>
+                        <p>Western</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card-icon">
+                    <button class="add-to-favorites" style="background-color: transparent; border: transparent;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                            fill="rgba(219, 226, 229, 1)">
+                            <path
+                                d="M17.3631 11.0453C18.767 9.65157 21.0432 9.65157 22.4471 11.0453C23.851 12.439 23.851 14.6987 22.4471 16.0924L17 21.5L11.5529 16.0924C10.149 14.6987 10.149 12.439 11.5529 11.0453C12.9568 9.65157 15.233 9.65157 16.6369 11.0453L16.9996 11.4051L17.3631 11.0453ZM19.2426 4.75736C20.1831 5.69977 20.7461 6.87453 20.9318 8.09485C19.5993 7.84749 18.1932 8.08543 17.0001 8.808C14.8491 7.50516 12.0056 7.7777 10.1439 9.62594C8.01293 11.7414 7.95374 15.1405 9.96628 17.3273L10.1439 17.5117L12.565 19.916L10.9999 21.485L2.52138 12.993C0.417048 10.637 0.495706 7.01901 2.75736 4.75736C5.02157 2.49315 8.64519 2.41687 11.001 4.52853C13.35 2.42 16.98 2.49 19.2426 4.75736Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <img src="../posts/img/9999.png" alt="">
+                <h2>Healthy Japanese Fried Rice with Asparagus</h2>
+                <div class="Timer-restaurant">
+                    <div>
+                        <span><i class="ri-timer-fill"></i></span><span>30 minutes</span>
+                    </div>
+                    <div>
+                        <span><i class="ri-restaurant-fill"></i></span>
+                        <p>Snack</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- end of tries -->
+    <div class="container d-flex">
+        <div class="container-7 "> <!-- Deliciousness container -->
+            <div class="feed-back">
+                <div>
+                    <h2>Deliciousness to your inbox</h2>
+
+                </div>
+                <div class="input-wrapper rounded-4 w-100 w-md-75 w-lg-50">
+                    <input type="email" class="email-input" placeholder="Your email address..." required />
+                    <button class="subscribe-button">Subscribe</button>
+                </div>
+                <div class="feed-back-img-1 ">
+                    <img src="../assets/foodpics/202020.png" class="mt-5" alt="">
+                </div>
+                <div class="feed-back-img-2">
+                    <img src="../assets/foodpics/303030.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="footer-text">
+                    <a class="navbar-brand page-name  text-decoration-none me-5 " href="../index.html">
+                        <!--foodieland logo -->
+                        Foodieland<span style="color: rgb(227, 149, 4);">.</span></a>
+                    <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, </p>
+                </div>
+            </div>
+            <div class="footer-list">
+                <div class="page-icon">
+                    <ul>
+                        <li><a href="../../Blog list page/blog-list-index.html">Blog</a></li>
+                        <li><a href="../favorite page/favorite/favorite.html">Favorites</a></li>
+                        <li><a href="../../contact/HTML/contact-page.html">Contact</a></li>
+                        <li><a href="../../about/about.html">About us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="social-footer d-flex justify-content-end gap-4 pb-4" style="margin: 5px 20px 0px 0px;">
+            <a href="https://www.facebook.com" target="_blank"><i class="ri-facebook-fill fa-lg"></i></a>
+            <a href="https://www.x.com" target="_blank"><i class="ri-twitter-fill fa-lg"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="ri-instagram-fill fa-lg"></i></a>
+        </div>
+        <div class="footer-end">
+            <div class="footer-end-1">
+                <p class="ps-5">© 2024 Flowbase. Powered by <a href="https://batechu.com"
+                        target="_blank"><span>BATU</span></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="index.js"></script>
+    <script src="../favorite page/favorite_script.js"></script>
+</body>
+
+</html>
