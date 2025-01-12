@@ -1,9 +1,26 @@
+
+:root {
+    --main-text-color: black;
+    --box-shadow-color: 4px 4px 8px #d0d0d0, -4px -4px 8px #ffffff;
+    --box-shadow-color2: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
+    --border-color: #dadada;
+    --box-color: #E7F9FD;
+}
+
+.darkmode {
+    --main-text-color: white;
+    --box-shadow-color: inset 6px 6px 7px #38435d, -6px -6px 10px #0f172a;
+    --box-shadow-color2: inset 6px 6px 7px #0f172a, -6px -6px 10px #38435d;
+    --border-color: #1b253d;
+    --box-color: #2A3B4D;
+}
+/* //////////////// */
 .container-7 {
     width: 70%;
     margin: 0 auto;
     margin-bottom: 60px;
-    margin-top: 100px;
-    background-color: #E7F9FD;
+    margin-top: 10px;
+    background-color: var(--box-color);
     overflow: hidden;
     border-radius: 50px;
     padding: 20px;
@@ -31,14 +48,8 @@
     line-height: 58.09px;
     letter-spacing: -4%;
     margin-bottom: 35px;
-}
-
-.feed-back p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-    color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 30px;
+    display: inline-flex;
+    color: var(--main-text-color);
 }
 
 .input-wrapper {
@@ -56,7 +67,7 @@
     padding: 15px 160px 15px 20px;
     font-size: 16px;
     border-radius: 30px;
-    border: none;
+    border: 1px solid var(--border-color);
     outline: none;
     box-sizing: border-box;
 }
@@ -66,8 +77,8 @@
     top: 0;
     right: 0;
     height: 100%;
-    background-color: #000;
-    color: #fff;
+    background-color: black;
+    color: white;
     border: none;
     padding: 0 20px;
     font-size: 16px;
@@ -75,6 +86,10 @@
     border-radius: 0 30px 30px 0;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+    background-color: #0E73C9;
 }
 
 .feed-back img {
@@ -95,4 +110,40 @@
     position: absolute;
     bottom: 100px;
     right: 70px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .feed-back h2 {
+        font-size: 2.5rem;
+    }
+
+    .input-wrapper {
+        max-width: 600px;
+    }
+
+    .feed-back-img-1,
+    .feed-back-img-2 {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .feed-back h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-wrapper {
+        flex-direction: column;
+    }
+
+    .email-input {
+        padding: 10px;
+        border-radius: 30px 30px 0 0;
+    }
+    .subscribe-button {
+        position: static;
+        border-radius: 0 0 30px 30px;
+        width: 100%;
+    }
 }

@@ -1,3 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --base-color: white;
+    --but:white;
+    --main-text-color: #111;
+    --box-color:white;
+    --bb:black;
+}
+
+.darkmode {
+    --base-color: #0f172a;
+    --but: #313745;
+    --main-text-color: white;
+    --box-color:#2A3B4D;
+    --bb:#45f3ff;
+}
+
+/* switch */
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--but);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-switch svg {
+    fill: var(--main-text-color);
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+/* ///////////////////////////////////////// */
+body{
+    background-color: var(--base-color);
+}
 .card{
     position: relative;
     border-radius:20px; 
@@ -32,13 +85,13 @@ z-index: 1;
 }
 
 form {
-    background: white;
+    background: var(--box-color);
     z-index: 2;
 }
 .form-floating{
     position: relative;
     box-shadow: none;
-    border-bottom: 2px solid #111;
+    border-bottom: 2px solid var(--bb);
 }
 
 .form-floating input{
@@ -47,15 +100,16 @@ form {
     background: transparent;
     border: none;
     outline: none;
-    border-color: #111;
+    border-color: var(--bb);
     box-shadow: none;
-
+    background-color: var(--box-color);
 }
 .form-floating label{
     position: absolute;
     top: -10px;
     font-size: 1em;
     transition: 0.3s ease;
+    color: var(--main-text-color);
 }
 .form-floating span{
     position: absolute;
@@ -63,6 +117,7 @@ form {
     top: -15px;
     font-size: 1.2rem;
     line-height: 57px;
+    color: var(--main-text-color);
 }
 
 .card::after
@@ -89,4 +144,10 @@ z-index: 1;
     {
         transform: rotate(360deg);
     }
+}
+.card-body{
+    background-color: var(--box-color);
+}
+h2, u{
+    color: var(--main-text-color);
 }
