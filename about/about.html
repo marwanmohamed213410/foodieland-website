@@ -19,35 +19,55 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
         rel="stylesheet">
     <!-- Custom Styles -->
+    <script type="text/javascript" src="../switch.js" defer></script>
     <link rel="stylesheet" href="BATU.css">
+    <link rel="stylesheet" href="../nav_bar & footer/nav.css">
     <!-- <link rel="stylesheet" href="category-pages.css"> -->
 </head>
 
 <body>
 
-    <nav class="container-fluid navbar fixed-top border bg-white "> <!-- main navbar -->
+    <nav class="container-fluid navbar fixed-top border bg-white "> <!-- start navbar -->
         <div class="container-fluid d-inline ">
             <div class="row d-flex g-lg-5 ">
                 <div class="col-2 p-3 ms-5 d-flex ">
 
-                    <a class="navbar-brand page-name text-dark text-decoration-none " href="#"> <!--foodieland logo -->
+                    <a class="navbar-brand page-name1  text-decoration-none me-5 " href="../index.html">
+                        <!--foodieland logo -->
                         Foodieland<span style="color: rgb(227, 149, 4);">.</span></a>
                 </div> <!-- home tabs  -->
                 <div class="col-8 d-flex align-content-center justify-content-center" style="margin-left: -70px;">
-                    <a class="home-tab text-dark text-decoration-none d-none d-xxl-flex ps-4 pe-5" href="../index.html">Home</a>
-                    <a class="home-tab text-dark text-decoration-none d-none d-xxl-flex ps-4 pe-5 " href="../Blog list page/blog-list-index.html">Blog</a>
-                    <a class="home-tab text-dark text-decoration-none d-none d-xxl-flex ps-4 pe-5 " href="../favorite page/favorite/favorite.html">Favorites</a>
-                    <a class="home-tab text-dark text-decoration-none d-none d-xxl-flex ps-4 pe-5 " href="../Comments & Reviews/comments.html">Comments</a>
-                    <a class="home-tab text-dark text-decoration-none d-none d-xxl-flex ps-4 pe-5  " href="../contact/HTML/contact-page.html">Contact</a>
-                    <a class="home-tab text-dark text-decoration-none d-none d-xxl-flex flex-shrink-0 ps-4 pe-4  "
-                        href="about.html">About us</a>
-
+                    <a class="home-tab d-none d-xxl-flex ps-4 pe-5" href="../index.html">Home</a>
+                    <a class="home-tab d-none d-xxl-flex ps-4 pe-5 "
+                        href="../Blog list page/blog-list-index.html">Blog</a>
+                    <a class="home-tab d-none d-xxl-flex ps-4 pe-5 "
+                        href="../favorite page/favorite/favorite.html">Favorites</a>
+                    <a class="home-tab d-none d-xxl-flex ps-4 pe-5 "
+                        href="../Comments & Reviews/comments.html">Comments</a>
+                    <a class="home-tab d-none d-xxl-flex ps-4 pe-5 "
+                        href="../contact/HTML/contact-page.html">Contact</a>
+                    <a class="home-tab d-none d-xxl-flex flex-shrink-0 ps-4 pe-4  " href="../about/about.html">About
+                        us</a>
                 </div>
-                <!-- humberger menu and dark-mode-buttons -->
-                <div class="col-2 d-flex align-items-center flex-shrink-0 justify-content-end  ">
-
-                    <div> <!-- hamburger button menu when the screen meduim -->
-                        <button class="navbar-toggler  d-flex d-xl-flex d-xxl-none ms-4 " type="button"
+                <div class="col-2 d-flex align-items-center flex-shrink-0 justify-content-end">
+                    <div class="social">
+                        <div class="links-container">
+                            <button id="theme-switch">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                    <path
+                                        d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                    <path
+                                        d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+                                </svg>
+                            </button>
+                            <a class="btn" href="../login/login.html">LogIn</a>
+                            <a class="btn d-none d-sm-block" href="../Register page/register.html">SignUp</a>
+                        </div>
+                    </div>
+                    <div> <!-- hamburger button menu when the screen medium -->
+                        <button class="navbar-toggler d-flex d-xl-flex d-xxl-none ms-4" type="button"
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
                             aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -58,7 +78,7 @@
                             aria-labelledby="offcanvasNavbarLabel">
 
                             <div class="offcanvas-header"> <!--header inside the list  -->
-                                <a class="navbar-brand page-name text-dark text-decoration-none " href="#">
+                                <a class="navbar-brand page-name  text-decoration-none me-5 " href="../index.html">
                                     Foodieland<span style="color: rgb(227, 149, 4);">.</span></a>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
@@ -67,32 +87,34 @@
                             <div class="offcanvas-body"> <!-- tabs inside the list  -->
                                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                     <li class="nav-item justify-content-end">
-                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        <a class="nav-link" href="../index.html">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Recipes</a>
+                                        <a class="nav-link" href="../Blog list page/blog-list-index.html">Blog</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Blog</a>
+                                        <a class="nav-link" href="../favorite page/favorite/favorite.html">Favorites</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Category</a>
+                                        <a class="nav-link" href="../Comments & Reviews/comments.html">Comments</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Comments</a>
+                                        <a class="nav-link" href="../contact/HTML/contact-page.html">Contact</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">About us</a>
+                                        <a class="nav-link" href="../about/about.html">About us</a>
                                     </li>
                                 </ul>
 
-                                <div class="= d-flex justify-content-end pt-5 "> <!--icons inside the list  -->
-                                    <i class="fa-brands fa-facebook-f fa-lg pt-5"></i>
-                                    <i class="fa-brands fa-twitter fa-lg ps-4 pt-5 "></i>
-                                    <i class="fa-brands fa-instagram fa-lg ps-4 pt-5"></i>
+                                <div class="social d-flex justify-content-end pt-5 "> <!--icons inside the list  -->
+                                    <a href="https://www.facebook.com" target="_blank"><i
+                                            class="ri-facebook-fill"></i></a>
+                                    <a href="https://www.x.com" target="_blank"><i class="ri-twitter-fill"></i></a>
+                                    <a href="https://www.instagram.com" target="_blank"><i
+                                            class="ri-instagram-fill"></i></a>
+                                </div>
+                                <div>
+
                                 </div>
                             </div>
                         </div>
@@ -100,7 +122,8 @@
                 </div>
             </div>
         </div>
-    </nav> <!-- end of navbar  -->
+    </nav>
+    <!-- end of navbar  -->
 
     <section class="hero-section text-center">
         <div class="container">
@@ -159,59 +182,64 @@
 
 
     <!-- Call to Action -->
-    <div class="container-7 d-lg-block d-md-block d-none"> <!-- Deliciousness container -->
-        <div class="feed-back">
-            <div>
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="container-7">
+            <div class="feed-back">
                 <h2>Deliciousness to your inbox</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqut enim ad minim </p>
+                <form>
+                    <div class="input-wrapper rounded-4 w-100">
+                        <input type="email" class="email-input" placeholder="Your email address..." required>
+                        <button class="subscribe-button">Subscribe</button>
+                    </div>
+                </form>
+                <div class="feed-back-img-1">
+                    <img src="../posts/img/202020.png" class="mt-5" alt="Food Image 1">
+                </div>
+                <div class="feed-back-img-2">
+                    <img src="../posts/img/303030.png" alt="Food Image 2">
+                </div>
             </div>
-            <form class="input-wrapper">
-                <input type="email" class="email-input" placeholder="Your email address..." required>
-                <button class="subscribe-button" type="submit">Subscribe</button>
-
-            </form>
-
-            <div class="feed-back-img-1">
-                <img src="ziadalbadry.png" alt="">
-            </div>
-            <div class="feed-back-img-2">
-                <img src="Photo-plate (2).png" alt="">
-            </div>
-
         </div>
     </div>
 
-    <footer style="background-color: #f9fafc;">
-        <div class="footer-container container d-flex">
-            <div class="footer-text">
-                <a class="navbar-brand page-name text-dark text-decoration-none " href="#"> <!--foodieland logo -->
-                    Foodieland<span style="color: rgb(227, 149, 4);">.</span></a>
-                <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, </p>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="footer-text">
+                    <a class="navbar-brand page-name  text-decoration-none me-5 " href="../index.html">
+                        <!--foodieland logo -->
+                        Foodieland<span style="color: rgb(227, 149, 4);">.</span></a>
+                    <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, </p>
+                </div>
             </div>
             <div class="footer-list">
-                <ul>
-                    <li><a href="##">Recipes</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About us</a></li>
-
-                </ul>
-
+                <div class="page-icon">
+                    <ul>
+                        <li><a href="../../Blog list page/blog-list-index.html">Blog</a></li>
+                        <li><a href="../favorite page/favorite/favorite.html">Favorites</a></li>
+                        <li><a href="../../contact/HTML/contact-page.html">Contact</a></li>
+                        <li><a href="../../about/about.html">About us</a></li>
+                    </ul>
+                </div>
             </div>
+        </div>
+        <div class="social-footer d-flex justify-content-end gap-4 pb-4" style="margin: 5px 20px 0px 0px;">
+            <a href="https://www.facebook.com" target="_blank"><i class="ri-facebook-fill fa-lg"></i></a>
+            <a href="https://www.x.com" target="_blank"><i class="ri-twitter-fill fa-lg"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="ri-instagram-fill fa-lg"></i></a>
         </div>
         <div class="footer-end">
             <div class="footer-end-1">
-                <p>© 2024 Flowbase. Powered by <span>BATU</span></p>
-            </div>
-            <div class="footer-icons d-flex justify-content-end gap-4 pb-4">
-                <i class="fa-brands fa-facebook-f fa-lg " style="color: black;"></i>
-                <i class="fa-brands fa-twitter fa-lg " style="color: black;"></i>
-                <i class="fa-brands fa-instagram fa-lg " style="color: black;"></i>
+                <p class="ps-5">© 2024 Flowbase. Powered by <a href="https://batechu.com"
+                        target="_blank"><span>BATU</span></a></p>
             </div>
         </div>
-
     </footer>
+
+    <!-- //////////// -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

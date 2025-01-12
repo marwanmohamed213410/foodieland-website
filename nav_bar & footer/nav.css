@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+.navbar{
+  background-color: var(--base-color) !important;
+}
 .links-container {
   display: flex;
   flex-direction: row;
@@ -10,20 +13,28 @@
 }
 
 .links-container a {
-  border: solid black;
+  border: solid var(--main-text-color);;
   border-radius: 8px;
   padding: 4px 10px;
   text-decoration: none;
   display: inline-block;
+  background-color: var(--base-color);
 }
 
 .links-container a:hover {
   border-color: #0e73c9;
+  background-color: white;
 }
 
 @media screen and (max-width: 600px) {
   .links-container a {
     padding: 6px 12px;
+  }
+}
+
+@media(max-width: 445px) {
+  .links-container a {
+    display: none;
   }
 }
 
@@ -39,7 +50,7 @@
   padding-right: 20px;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: var(--main-text-color);
   text-decoration: bold;
   font-size: 19px;
   transition: color 0.3s ease;
@@ -51,8 +62,8 @@
 
 #offcanvasNavbar{
   width: 200px;
+  background-color: var(--base-color);
 }
-
 .social{
   display: flex;
   align-items: center;
@@ -61,7 +72,7 @@
 .social a{
   margin-right: 10px;
   margin-left: 10px;
-  color: #000;
+  color: var(--main-text-color);;
   font-size: 1.1rem;
   font-weight: 500;
 }
@@ -71,17 +82,17 @@
   fill: #0e73c9;
 }
 
-.page-name {
+.page-name1 {
   font-family: Lobster, sans-serif;
   display: inline;
   font-size: 24px;
+  color: var(--main-text-color);
 }
 
 .title-cont {
   font-family: Lobster, sans-serif;
   display: inline;
   font-size: 24px;
-
 }
 
 a {
@@ -98,4 +109,34 @@ a:active {
 
 a:visited {
   text-decoration: none;
+}
+.nav-link{
+  color: var(--main-text-color);
+}
+.navbar-toggler {
+  background-color: var(--base-color);
+  border-color: var(--main-text-color);
+}
+/* //////////////// */
+.btn-close {
+  background-color: transparent; 
+  border: none;
+  width: 24px; 
+  height: 24px; 
+  position: relative; 
+}
+.btn-close::before, 
+.btn-close::after {
+  content: '';
+  position: absolute;
+  width: 16px; 
+  height: 2px; 
+  background-color: var(--main-text-color);
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: background-color 0.3s ease-in-out;
+}
+.btn-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg); 
 }
