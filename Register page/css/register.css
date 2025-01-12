@@ -3,12 +3,16 @@
     --base-color: white;
     --but:white;
     --main-text-color: #111;
+    --box-color:white;
+    --bb:black;
 }
 
 .darkmode {
     --base-color: #0f172a;
     --but: #313745;
     --main-text-color: white;
+    --box-color:#2A3B4D;
+    --bb:#45f3ff;
 }
 
 /* switch */
@@ -81,13 +85,13 @@ z-index: 1;
 }
 
 form {
-    background: white;
+    background: var(--box-color);
     z-index: 2;
 }
 .form-floating{
     position: relative;
     box-shadow: none;
-    border-bottom: 2px solid #111;
+    border-bottom: 2px solid var(--bb);
 }
 
 .form-floating input{
@@ -96,7 +100,7 @@ form {
     background: transparent;
     border: none;
     outline: none;
-    border-color: #111;
+    border-color: --bb;
     box-shadow: none;
 
 }
@@ -105,6 +109,7 @@ form {
     top: -10px;
     font-size: 1em;
     transition: 0.3s ease;
+    color: var(--main-text-color);
 }
 .form-floating span{
     position: absolute;
@@ -112,6 +117,7 @@ form {
     top: -15px;
     font-size: 1.2rem;
     line-height: 57px;
+    color: var(--main-text-color);
 }
 
 .card::after
@@ -138,4 +144,10 @@ z-index: 1;
     {
         transform: rotate(360deg);
     }
+}
+.card-body{
+    background-color: var(--box-color);
+}
+h2, u, .form-check-label{
+    color: var(--main-text-color);
 }
