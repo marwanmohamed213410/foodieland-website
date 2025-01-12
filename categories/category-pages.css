@@ -225,194 +225,65 @@ h1 {
 }
 /* /////////////////////////////////////// */
 /* General Container Styling */
-.container-3 {
-  width: 80%;
-  margin-left: 20px;
-  padding: 20px;
-}
+.text-dark,.under-meat  {
 
-/* Text Styling */
-.container-3-text p {
-  display: flex;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 28px;
-  color: rgba(0, 0, 0, 0.6);
-  margin: 10px 0;
-}
-
-.container-3-text h2 {
-  display: flex;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 58.09px;
-  letter-spacing: -4%;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-/* Card Layout Styling */
-.card-test {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 80px;
-  margin-bottom: 60px;
-  margin-left: 50px;
-  gap: 40px;
-  justify-content: center;
-  padding: 0 10px;
-}
-
-@media (max-width: 768px) {
-  .card-test {
-      margin-left: 0;
-      gap: 20px;
-      padding: 0;
-  }
-
-  .item {
-      width: 100%;
-      margin-bottom: 40px;
-  }
-
-  .container-3-text h2 {
-      font-size: 36px;
-      line-height: 48px;
-  }
-
-  .container-3-text p {
-      font-size: 14px;
-      line-height: 24px;
-  }
-}
-
-/* Individual Card Styling */
-.item {
-  background-image: linear-gradient(to top,
-          rgba(231, 249, 253, 1) 0%,
-          rgba(231, 249, 253, 0) 100%);
-  border-radius: 30px;
-  width: 410px;
-  position: relative;
-  padding: 20px;
-  margin-bottom: 60px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  /* Adds a subtle shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Smooth transition on hover */
-}
-
-.item:hover {
-  transform: translateY(-10px);
-  /* Lift the card on hover */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  /* Enhance shadow on hover */
-}
-
-/* Card Image Styling */
-.item img {
-  position: relative;
-  height: 250px;
-  margin: 0 auto;
-  width: 100%;
-  display: block;
-  object-fit: cover;
-  border-radius: 15px;
-  transition: transform 0.3s ease;
-  /* Smooth zoom effect */
-}
-
-.item img:hover {
-  transform: scale(1.05);
-  /* Slight zoom effect on hover */
-}
-
-/* Card Heading Styling */
-.item h2 {
-  font-weight: 600;
-  margin-top: 30px;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: -4%;
-  text-align: center;
-  color: var(--sec-text-color);
-  /* Darker text for better contrast */
-}
-
-/* Timer Section Styling */
-.Timer-restaurant {
-  display: flex;
-  gap: 40px;
-  margin-top: 20px;
-  justify-content: center;
-  /* Center timer content */
-}
-
-.Timer-restaurant i {
-  font-size: 18px;
-  line-height: 18px;
-  margin-right: 10px;
-}
-
-.Timer-restaurant p {
-  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16.94px;
-  letter-spacing: -2%;
-  color: rgba(0, 0, 0, 0.6);
-  text-align: center;
-}
+  font-style: normal;
 
-/* Card Icon Styling */
-.card-icon {
-  background-color: var(--base-color);
-  border-radius: 50%;
-  padding: 10px;
-  position: absolute;
-  top: 30px;
-  right: 50px;
-  z-index: 2;
-  width: 48px;
-  height: 48px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow around icon */
-  transition: box-shadow 0.3s ease;
-}
+}   
 
-.under-card {
+.under-card{
+
   font-family: "Inter", sans-serif;
   font-size: 15px;
-  cursor: pointer;
+cursor: pointer;
+}
+.heart-icon {
+color: #000;
+transition: color 0.3s ease;
+}
+.heart-icon:hover {
+color: red;
 }
 
-.card-img-top {
-  height: 230px !important;
+.heart-icon:active {
+color: red;
+
+}
+.heart-icon:focus{
+  outline: none;
 }
 
-.card-icon:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  /* Enhanced shadow on hover */
-}
+  /* تأثير عند الضغط على الكرت */
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* لتحديد المدة والطريقة */
+  }
 
-#favorites-container {
-  margin-top: 20px;
-  padding: 10px;
-}
+  /* تكبير الكرت عند المرور */
+  .card-hover:hover {
+    transform: scale(1.05); /* تكبير الكرت بنسبة 5% عند المرور */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظلال عند المرور */
+  }
 
-/* Image default style */
-.item img {
-  filter: none;
-  /* No filter */
-  transition: filter 0.3s ease-in-out;
-  /* Smooth transition */
-}
+  /* تصغير الكرت عند الضغط */
+  .card-hover:active {
+    transform: scale(0.98); /* تصغير الكرت عند الضغط */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* تقليل الظلال عند الضغط */
+  }
+  .card {
+    height: 100% !important ;
+    width: 100% !important;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+  }
+
+  .card-img-top{
+    height: 230px !important;
+
+  }
 
 /* Active (favorited) style */
 .item img.active {
