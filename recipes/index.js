@@ -33,8 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const span = item.querySelector('span');
             span.style.textDecoration = 'line-through';
             span.style.color = 'rgba(0, 0, 0, 0.3)';
-            circle.style.backgroundColor = '#9E9E9E';
-            circle.innerHTML = '<i class="ri-check-line" style="color: white;"></i>';
+            circle.innerHTML = '<i class="ri-check-line" style="color: black;"></i>';
         }
     });
 
@@ -52,17 +51,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 span.style.textDecoration = 'line-through';
                 span.style.color = 'rgba(0, 0, 0, 0.3)';
                 
-                circle.style.backgroundColor = '#9E9E9E';
-                circle.innerHTML = '<i class="ri-check-line" style="color: white;"></i>';
+                circle.innerHTML = '<i class="ri-check-line" style="color: black;"></i>';
 
                 const id = item.getAttribute('data-id');
                 localStorage.setItem(id, 'true');
             } else {
                 span.style.textDecoration = 'none';
-                span.style.color = '#000';
+                span.style.color = 'var(--main-text-color)';
                 
-            
-                circle.style.backgroundColor = 'rgba(219, 226, 229, 1)';
                 circle.innerHTML = '';
 
 
