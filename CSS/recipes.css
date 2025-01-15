@@ -686,7 +686,7 @@ footer {
     flex-direction: column;
 }
 
-.page-name {
+.page-name1 {
     font-family: Lobster, sans-serif;
     display: inline;
     font-size: 24px;
@@ -1115,7 +1115,7 @@ footer {
 .container-4-rec{
     width: 70%;
     position: relative;
-   margin-left: 80px;
+    margin-left: 80px;
     margin-bottom: 50px;
 }
 .todo-1-text{
@@ -1123,7 +1123,7 @@ footer {
     align-items: center;
 }
 .todo-1-text span{
-    color: var(--sec-text-color);
+    color: var(--main-text-color);
 }
 .container-4-rec h2{
     margin-bottom: 60px;
@@ -1327,7 +1327,7 @@ footer {
 }
 
 .todo-1 span {
-    color: #000;
+    color: var(--main-text-color);
 }
 
 #circle {
@@ -1340,27 +1340,5 @@ footer {
     align-items: center;
     margin-right: 15px;
     vertical-align: baseline;
+    background-color: white;
 }
-.bmw-2 .todo.completed #circle {
-    background-color: #9E9E9E;
-    border: 2px solid #9E9E9E;
-    transform: scale(1.2);
-}
-
-.bmw-2 .todo.completed span {
-    text-decoration: line-through;
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.bmw-2 .todo.completed i {
-    color: white;
-    font-size: 14px;
-}
-
-.bmw-2 .todo:focus,
-.bmw-2 .todo-1:focus {
-    outline: 3px solid #2196F3;
-    background-color: #f0f8ff;
-}
-
-/* //////////////////////responsive//////////////////////// */
