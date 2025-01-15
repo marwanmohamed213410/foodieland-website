@@ -2,8 +2,66 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root {
+  --base-color: white;
+  --main-text-color: black;
+  --sec-text-color: #574f49;
+  --box-color: #ffffff;
+  --box-color1: #E7F9FD;
+  --bb: rgba(0, 0, 0, 0.2);
+  --bg-color: #222327 --text-color: #fff;
+  --main-color: #29fd53;
+}
+
+.darkmode {
+  --base-color: #0f172a;
+  --main-text-color: white;
+  --sec-text-color: #7a7676;
+  --box-color: #2A3B4D;
+  --box-color1: #2A3B4D;
+  --bb: rgba(250, 250, 250, 0.6);
+}
+
+/* switch */
+#theme-switch {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--base-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  right: 20px;
+}
+
+@media(max-width:450px) {
+  #theme-switch {
+      width: 25px;
+      height: 25px;
+  }
+}
+
+#theme-switch svg {
+  fill: var(--main-text-color);
+}
+
+#theme-switch svg:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+  display: block;
+}
+
 .navbar{
   background-color: var(--base-color) !important;
+  border-color: var(--base-color) !important;
 }
 .links-container {
   display: flex;
@@ -23,7 +81,7 @@
 
 .links-container a:hover {
   border-color: #0e73c9;
-  background-color: white;
+  background-color: var(--base-color);
 }
 
 @media screen and (max-width: 600px) {
@@ -54,6 +112,7 @@
   text-decoration: bold;
   font-size: 19px;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .home-tab:hover {
@@ -87,6 +146,11 @@
   display: inline;
   font-size: 24px;
   color: var(--main-text-color);
+  transition: color 0.3s ease;
+}
+
+.page-name1:hover {
+  color: var(--main-text-color);
 }
 
 .title-cont {
@@ -112,10 +176,16 @@ a:visited {
 }
 .nav-link{
   color: var(--main-text-color);
+  transition: color 0.3s ease;
 }
+
+.nav-link:hover{
+  color: #0e73c9;
+}
+
 .navbar-toggler {
-  background-color: var(--base-color);
-  border-color: var(--main-text-color);
+  background-color: white;
+  border-color: var(--main-text-color); 
 }
 /* //////////////// */
 .btn-close {

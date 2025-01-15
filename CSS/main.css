@@ -375,8 +375,7 @@ body {
     color: var(--main-text-color);
 }
 
-.card34:hover,
-a:hover {
+.card34:hover{
     transform: scale(0.95);
 }
 
@@ -1386,14 +1385,6 @@ footer {
 .footer-text {
     display: flex;
     flex-direction: column;
-}
-
-.page-name {
-    font-family: Lobster, sans-serif;
-    display: inline;
-    font-size: 24px;
-    color: var(--main-text-color);
-    text-decoration: none;
 }
 
 .footer-text p {
