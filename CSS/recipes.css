@@ -1,3 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+    --base-color: white;
+    --main-text-color: black;
+    --sec-text-color: #574f49;
+    --box-color: #ffffff;
+    --box-color1: #E7F9FD;
+    --bb: rgba(0, 0, 0, 0.2);
+    --bg-color: #222327 --text-color: #fff;
+    --main-color: #29fd53;
+}
+
+.darkmode {
+    --base-color: #0f172a;
+    --main-text-color: white;
+    --sec-text-color: #7a7676;
+    --box-color: #2A3B4D;
+    --box-color1: #2A3B4D;
+    --bb: rgba(250, 250, 250, 0.6);
+}
+
+/* switch */
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    right: 20px;
+}
+@media(max-width:450px){
+    #theme-switch{
+        width: 25px;
+        height: 25px;
+    }
+}
+#theme-switch svg {
+    fill: var(--main-text-color);
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+/* /////////// */
+
+body{    
+    color: var(--base-color);
+}
+/* ////////////////////// */
 * {
     margin: 0;
     padding: 0;
@@ -5,104 +69,6 @@
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     list-style: none;
-}
-
-:root {
-    --bg-color: #222327 --text-color: #fff;
-    --main-color: #29fd53
-}
-
-body {
-    min-height: 100vh;
-    color: #000;
-}
-
-
-header {
-    position: relative;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
-    justify-content: space-between;
-    background: #fff;
-    background: transparent;
-    padding: 28px 12%;
-    transition: all .50s ease;
-}
-
-
-
-.logo img {
-    width: 100%;
-    height: 100%;
-
-}
-
-.logo i {
-    font-size: 28px;
-    margin-right: 3px;
-
-}
-
-.logo span {
-    color: #000;
-    font-size: 1.7rem;
-    font-weight: 600;
-}
-
-.navbar {
-    display: flex;
-
-}
-
-.navbar a {
-    color: #000;
-    font-size: 1.1rem;
-    font-weight: 500;
-    padding: 5px 0;
-    margin: 0px 30px;
-    transition: all .50s ease;
-}
-
-
-
-
-.main {
-    display: flex;
-    align-items: center;
-}
-
-.main a {
-    margin-right: 25px;
-    margin-left: 10px;
-    color: #000;
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-.user {
-    display: flex;
-    align-items: center;
-}
-
-.user i {
-    color: var(--main-color);
-    font-size: 28px;
-    margin-right: 7px;
-}
-
-
-
-#menu-icon {
-    font-size: 35px;
-    color: #000;
-    cursor: pointer;
-    z-index: 10001;
-    display: none;
 }
 
 .container {
@@ -115,8 +81,6 @@ header {
     margin: 0 auto;
     border-radius: 10px;
 }
-
-
 .home {
     display: flex;
     justify-content: space-between;
@@ -125,7 +89,7 @@ header {
 }
 
 .home-text {
-    background-color: rgba(231, 250, 254, 1);
+    background-color: var(--box-color1);
     width: 620px;
     height: 640px;
     border-radius: 12px;
@@ -146,12 +110,10 @@ header {
     padding: 8px;
     margin-top: 30px;
     margin-left: 30px;
-    background-color: #fff;
+    background-color: var(--base-color);
     width: fit-content;
     border-radius: 20px;
     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
-
-
 }
 
 .text p {
@@ -159,11 +121,12 @@ header {
     font-weight: 600;
     font-size: 14px;
     line-height: 16.94px;
-    color: #000;
+    color: var(--main-text-color);
 }
 
 .text span {
     padding-right: 8px;
+    color: var(--main-text-color);
 }
 
 .home-title {
@@ -179,7 +142,7 @@ header {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 15px;
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--sec-text-color);
 
 }
 
@@ -193,6 +156,7 @@ header {
 
 .time-eat span {
     margin-right: 10px;
+    color: var(--main-text-color);
 }
 
 .text-time {
@@ -207,6 +171,7 @@ header {
 
 .text-time span i {
     font-size: 20px;
+    color: var(--main-text-color);
 }
 
 .BMW {
@@ -235,14 +200,14 @@ header {
     font-size: 14px;
     font-weight: 600;
     line-height: 16.94px;
-    color: #000;
+    color: var(--main-text-color);
 }
 
 .person span {
     font-size: 14px;
     font-weight: 400;
     line-height: 16.94px;
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--sec-text-color);
 }
 
 .person img {
@@ -287,11 +252,11 @@ header {
     font-size: 32px;
     font-weight: 600;
     line-height: 39.2px;
-    color: #000;
+    color: var(--main-text-color);
 }
 
 .categories button {
-    background-color: rgba(231, 250, 254, 1);
+    background-color: var(--box-color1);
     padding: 15px 15px;
     color: #000;
     border-radius: 20px;
@@ -339,19 +304,15 @@ header {
     font-size: 16px;
     line-height: 21.78px;
     letter-spacing: -2%;
+    color: var(--main-text-color);
 }
-
-
-
 .text p {
     display: flex;
     justify-content: center;
     font-weight: 600;
     font-size: 16px;
     line-height: 28px;
-    color: rgba(0, 0, 0, 0.6);
-
-
+    color: var(--sec-text-color);
 }
 
 .container-3-text h2 {
@@ -362,13 +323,13 @@ header {
     line-height: 58.09px;
     letter-spacing: -4%;
     margin-bottom: 30px;
+    color: var(--main-text-color);
 }
 
 .container-3 {
     width: 95%;
     margin-left: 20px;
 }
-
 
 .card-test {
     display: flex;
@@ -387,9 +348,7 @@ header {
     position: relative;
     padding: 20px;
     margin-bottom: 60px;
-
 }
-
 
 .card-3 img {
     position: relative;
@@ -408,6 +367,7 @@ header {
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -4%;
+    color: var(--main-text-color);
 }
 
 .Timer-restaurant {
@@ -420,6 +380,7 @@ header {
     font-size: 18px;
     line-height: 18px;
     margin-right: 10px;
+    color: black;
 }
 
 .Timer-restaurant p {
@@ -428,7 +389,7 @@ header {
     font-size: 14px;
     line-height: 16.94px;
     letter-spacing: -2%;
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--sec-text-color);
 }
 
 .card-icon {
@@ -479,7 +440,6 @@ header {
 .chef-text {
     width: 600px;
     margin-left: 60px;
-
 }
 
 .chef-text h2 {
@@ -488,19 +448,19 @@ header {
     line-height: 58.09px;
     letter-spacing: -4%;
     margin-bottom: 30px;
+    color: var(--main-text-color);
 }
 
 .span-text {
     color: #0E73C9;
     display: flex;
-
 }
 
 .chef-text p {
     font-weight: 600;
     font-size: 16px;
     line-height: 28px;
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--sec-text-color);
     margin-bottom: 30px;
 }
 
@@ -521,13 +481,14 @@ header {
     line-height: 58.09px;
     letter-spacing: -4%;
     text-align: center;
+    color: var(--main-text-color);
 }
 
 .container-5 .insta-text p {
     font-weight: 600;
     font-size: 16px;
     line-height: 28px;
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--sec-text-color);
     margin-bottom: 30px;
     text-align: center;
 }
@@ -567,8 +528,6 @@ header {
     width: 24.75px;
     height: 24.75px;
     margin-right: 10px;
-
-
 }
 
 .insta-card-text {
@@ -576,15 +535,12 @@ header {
     font-size: 10.05px;
     line-height: 13.92px;
     letter-spacing: -0.08px;
-
 }
 
 #img {
     width: 290px;
     height: 290px;
-
     object-fit: cover;
-
 }
 
 .insta-card-main {
@@ -600,65 +556,19 @@ header {
     left: 250px;
     top: 10px;
     color: #fff;
-
 }
 
 .insta-card-footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-
-
-}
-
-.footer-1 {
-    display: flex;
-    gap: 100px;
-    align-items: center;
-    padding: 7px;
-    margin-left: 15px;
-
-}
-
-.footer-2 {
-    padding: 7px;
-
-}
-
-.footer-2-1 {
-    display: flex;
-    align-items: center;
-    margin-left: 15px;
-    margin-bottom: 10px;
-
-}
-
-.footer-2 p {
-    font-weight: 600;
-    font-size: 10.05px;
-    line-height: 13.92px;
-    letter-spacing: -0.08px;
-    margin-left: 15px;
-
-}
-
-.footer-2 span {
-    font-weight: 600;
-    font-size: 10.05px;
-    line-height: 13.92px;
-    letter-spacing: -0.08px;
-    color: rgba(0, 0, 0, 0.6);
-    margin-left: 15px;
-
 }
 
 #img-foter {
     width: 20pxpx;
     height: 20px;
     border-radius: 50%;
-
 }
-
 
 .card-btn {
     display: flex;
@@ -692,8 +602,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
 }
 
 .container-6-text h2 {
@@ -702,13 +610,14 @@ header {
     line-height: 58.09px;
     letter-spacing: -4%;
     margin-bottom: 30px;
+    color: var(--main-text-color);
 }
 
 .container-6-text p {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--sec-text-color);
     margin-bottom: 30px;
 }
 
@@ -734,7 +643,7 @@ header {
     font-size: 16px;
     line-height: 19.5px;
     letter-spacing: -0.08px;
-
+    color: var(--main-text-color);
 }
 
 #card img {
@@ -748,170 +657,107 @@ header {
     right: 0;
     transform: translateX(15px);
 }
-
-.container-7 {
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 60px;
-    margin-top: 100px;
-    background-color: #E7F9FD;
-    overflow: hidden;
-    border-radius: 50px;
-    padding: 20px;
-    position: relative;
-    height: 442px;
+h2{
+    color: var(--main-text-color);
 }
-
-.feed-back {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    min-width: 60%;
-    height: 100%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.feed-back h2 {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 58.09px;
-    letter-spacing: -4%;
-    margin-bottom: 35px;
-}
-
-.feed-back p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-    color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 30px;
-}
-
-.input-wrapper {
-    position: relative;
-    display: flex;
-    width: 500px;
-    border-radius: 30px;
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-
-.email-input {
-    width: 100%;
-    padding: 15px 160px 15px 20px;
-    font-size: 16px;
-    border-radius: 30px;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-}
-
-.email-input::placeholder {
-    color: #999;
-}
-
-
-.subscribe-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 0 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 0 30px 30px 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.feed-back img {
-    position: absolute;
-    width: 409.54px;
-    height: 400.08px;
-    transform: rotate(45deg);
-
-}
-
-.feed-back-img-1 {
-    position: absolute;
-    bottom: 250px;
-    left: -100px;
-    transform: translateX(-150px);
-}
-
-.feed-back-img-2 {
-    position: absolute;
-    bottom: 100px;
-    right: 70px;
-
-
-}
-
-
+/* Footer */
 
 footer {
     width: 100%;
     height: 100px;
-    padding: 60px;
+    padding: 1.5rem;
 }
 
 .footer-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: rgba(0, 0, 0, 0.2) solid 2px;
+    border-bottom: var(--bb) solid 2px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
 }
 
 .footer-text {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
 }
 
-.footer-text h5 {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19.5px;
-    letter-spacing: -0.08px;
-    margin-bottom: 10px;
+.page-name1 {
+    font-family: Lobster, sans-serif;
+    display: inline;
+    font-size: 24px;
+    color: var(--main-text-color);
+    text-decoration: none;
 }
 
 .footer-text p {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 10px;
+    color: var(--sec-text-color);
 }
 
 .footer-list {
     display: flex;
+    margin-right: 20px;
 }
 
-.footer-list ul {
+.social-footer {
     display: flex;
-    gap: 30px;
+    align-items: center;
 }
 
-.footer-list ul li {
-    margin-bottom: 10px;
+.social-footer a {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: var(--main-text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
-.footer-list ul li a {
+.social-footer a:hover {
+    color: #0e73c9;
+    fill: #0e73c9;
+}
+
+@media (max-width: 800px) {
+    .footer-list {
+        display: none;
+    }
+}
+.page-icon ul li {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.page-icon ul li:last-child {
+    margin-right: 0;
+}
+
+.page-icon ul li:first-child {
+    margin-left: 0;
+}
+
+.page-icon ul li a {
+    width: 70px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 19.36px;
-    color: rgba(0, 0, 0, 1);
     margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.page-icon ul li a:hover {
+    color: #0e73c9 !important;
 }
 
 .footer-end {
@@ -931,9 +777,8 @@ footer {
     font-size: 18px;
     line-height: 22.68px;
     letter-spacing: -2%;
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--main-text-color);
     text-align: center;
-
 }
 
 .footer-end-1 span {
@@ -943,24 +788,7 @@ footer {
     letter-spacing: -2%;
     color: rgba(163, 98, 1, 0.555);
     text-align: center;
-
 }
-
-.footer-icon {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 100px;
-
-}
-
-
-.footer-icon a {
-
-    color: #000;
-    font-size: 1.3rem;
-    font-weight: 500;
-}
-
 
 .container-1-re{
     position: relative;
@@ -968,7 +796,7 @@ footer {
     width: 90%;
     align-items: center;
     margin: 0 auto;
-    margin-top: 90px;
+    margin-top: 150px;
 }
 
 .japanes-food h1 {
@@ -976,15 +804,14 @@ footer {
     font-size: 64px;
     line-height: 77.45px;
     letter-spacing: -4%;
+    color: var(--main-text-color);
 }
 
 .cook-details{
     display: flex;
     gap: 20px;
     margin-top: 35px;
-
 }
-
 
 .details{
     display: flex;
@@ -1000,12 +827,11 @@ footer {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-
-
 }
 .details i{
     font-size: 18px;
     line-height: 18px;
+    color: var(--main-text-color);
 }
 .details p{
     font-weight: 500;
@@ -1013,11 +839,13 @@ footer {
     line-height: 14.52px;
     letter-spacing: 10%;
     margin-right: 20px;
-    
+    color: var(--main-text-color);
 }
-
+.todo-1-text span{
+    color: var(--sec-text-color);
+}
 .details span{
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--sec-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 16.94px;
@@ -1097,11 +925,10 @@ footer {
     border-radius: 50%;
     display: block;
     backdrop-filter:blur(20px);
-
 }
 
 .content-text{
-    background-color: rgba(231, 250, 254, 1);
+    background-color: var(--box-color1);
     width: 30%;
     min-height: 600px;
     border-radius: 30px;
@@ -1113,6 +940,7 @@ footer {
     font-size: 24px;
     line-height: 29.05px;
     letter-spacing: -4%;
+    color: var(--main-text-color);
 }
 .content-text-1{
     padding:15px ;
@@ -1127,7 +955,7 @@ footer {
     font-size: 16px;
     line-height: 28px;
     letter-spacing: -4%;
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--sec-text-color);
     position: absolute;
     bottom: 20px;
     padding: 30px;
@@ -1136,13 +964,12 @@ footer {
     vertical-align: middle;
 }
 
-
 .content-text-1 span{
     font-weight: 500;
     font-size: 18px;
     line-height: 21.78px;
     letter-spacing: -4%;
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--sec-text-color);
 }
 
 .content-text-1 p{
@@ -1150,6 +977,7 @@ footer {
     font-size: 18px;
     line-height: 21.78px;
     line-height: -4%;
+    color: var(--main-text-color);
 }
 
 #content-p-2{
@@ -1157,7 +985,7 @@ footer {
     font-size: 16px;
     line-height: 21.78px;
     letter-spacing: -4%;
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--sec-text-color);
     margin-bottom: 90px;
     padding: 40px;
     width: 90%;
@@ -1165,7 +993,6 @@ footer {
     justify-content: center;
     align-items: center;
     margin-left: 50px;
-
 }
 
 .container-3-rec{
@@ -1176,7 +1003,6 @@ footer {
     margin-bottom: 50px;
     margin-top: 90px;
     justify-content: space-between;
-
 }
 
 .other-recipe{
@@ -1194,8 +1020,6 @@ footer {
     border-radius: 40px;
     object-fit: cover;
     margin-right: 50px;
-    
-
 }
 #img-re{
     width: 300px;
@@ -1210,7 +1034,7 @@ footer {
     font-size: 20px;
     line-height: 28px;
     letter-spacing: -4%;
-
+    color: var(--main-text-color);
 }
 
 .other-recipe h2{
@@ -1219,6 +1043,7 @@ footer {
     line-height: 28px;
     letter-spacing: -4%;
     margin-bottom: 20px; 
+    color: var(--main-text-color);
 }
 
 .other-recipe p{
@@ -1226,13 +1051,11 @@ footer {
     font-size: 18px;
     line-height: 21.78px;
     letter-spacing: -4%;
-    color: rgba(0, 0, 0, 0.6);
-
-
+    color: var(--sec-text-color);
 }
 .todo span{
     text-decoration: line-through;
-    color: rgba(0, 0, 0, 0.3);
+    color: var(--sec-text-color);
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
@@ -1250,6 +1073,7 @@ footer {
     font-size: 36px;
     line-height: 43.57px;
     letter-spacing: -4%;
+    color: var(--main-text-color);
 }
 
 .bmw-2 p{
@@ -1258,6 +1082,7 @@ footer {
     line-height: 29.05px;
     letter-spacing: -4%;
     margin-bottom: 30px;
+    color: var(--main-text-color);
 }
 
 #line{
@@ -1268,7 +1093,7 @@ footer {
 }
 
 .todo-1 span{
-    color: #000;
+    color: var(--main-text-color);
 
 }
 
@@ -1280,8 +1105,7 @@ footer {
     display: inline-block;
     margin-right: 15px;
     vertical-align:baseline;
-    
-    
+    cursor: pointer;
 }
 
 #souce{
@@ -1291,19 +1115,19 @@ footer {
 .container-4-rec{
     width: 70%;
     position: relative;
-   margin-left: 80px;
+    margin-left: 80px;
     margin-bottom: 50px;
-   
-
 }
 .todo-1-text{
     display: flex;
     align-items: center;
 }
-
+.todo-1-text span{
+    color: var(--main-text-color);
+}
 .container-4-rec h2{
     margin-bottom: 60px;
-
+    color: var(--main-text-color);
 }
 
 #todo-span{
@@ -1311,17 +1135,15 @@ footer {
     font-weight: 600;
     line-height: 29.05px;
     letter-spacing: -2%;
+    color: var(--main-text-color);
 }
-
 .todo-1 p{
     font-weight: 400;
     font-size: 16px;
     padding: 30px;
     line-height: 26px;
     letter-spacing: -2%;
-    color: rgba(0, 0, 0, 0.6);
-    
-    
+    color: var(--sec-text-color);
 }
 
 .todo-1 img{
@@ -1343,67 +1165,6 @@ footer {
     display: flex;
     justify-content: center;
 }
-
-
-
-
-
-
-@media (max-width: 1280px) {
-    header {
-        padding: 14px 2%;
-        transition: all 0.2s ease;
-        
-    }
-
-    .navbar a {
-        padding: 5px 0;
-        margin: 0 20px;
-    }
-}
-
-@media (max-width: 1090px) {
-    #menu-icon {
-        display: block;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 270px;
-        background: var(--main-color);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        border-radius: 10px;
-        transition: all .50s ease;
-    }
-
-    .navbar a {
-        display: block;
-        margin: 12px 0;
-        padding: 0px 25px;
-        transition: all .50s ease;
-    }
-
-    .navbar a:hover {
-        color: #222327;
-        transform: translateY(5px);
-    }
-
-    .navbar a.active {
-        color: #222327;
-    }
-
-    .navbar.open {
-        right: 2%;
-    }
-
-
-}
-
-
 /* Share Button */
 .share-btn {
     border: none;
@@ -1420,11 +1181,9 @@ footer {
     transition: background 0.3s, transform 0.3s;
     background-color: rgba(231, 250, 254, 1); 
 }
-
 .share-btn:hover {
     transform: scale(1.1);
 }
-
 /* Share Options */
 .share-options {
     position: absolute;
@@ -1546,7 +1305,6 @@ footer {
 }
 /* Add more buttons with specific colors if needed */
 
-
 /* to do */
 .container-3 {
     width: 95%;
@@ -1557,6 +1315,7 @@ footer {
     margin-bottom: 50px;
     font-weight: 600;
     font-size: 36px;
+    color: var(--main-text-color);
 }
 
 .todo span {
@@ -1564,10 +1323,11 @@ footer {
     font-weight: 400;
     line-height: 28px;
     transition: color 0.3s, text-decoration 0.3s;
+    color: var(--main-text-color);
 }
 
 .todo-1 span {
-    color: #000;
+    color: var(--main-text-color);
 }
 
 #circle {
@@ -1580,28 +1340,5 @@ footer {
     align-items: center;
     margin-right: 15px;
     vertical-align: baseline;
+    background-color: white;
 }
-
-
-.bmw-2 .todo.completed #circle {
-    background-color: #9E9E9E;
-    border: 2px solid #9E9E9E;
-    transform: scale(1.2);
-}
-
-.bmw-2 .todo.completed span {
-    text-decoration: line-through;
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.bmw-2 .todo.completed i {
-    color: white;
-    font-size: 14px;
-}
-
-.bmw-2 .todo:focus,
-.bmw-2 .todo-1:focus {
-    outline: 3px solid #2196F3;
-    background-color: #f0f8ff;
-}
-
