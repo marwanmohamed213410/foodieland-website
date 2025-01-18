@@ -250,7 +250,6 @@ body {
     position: relative;
     height: 442px;
 }
-
 .feed-back {
     display: flex;
     flex-direction: column;
@@ -264,7 +263,6 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
 .feed-back h2 {
     font-weight: 600;
     font-size: 48px;
@@ -274,7 +272,6 @@ body {
     display: inline-flex;
     color: var(--main-text-color);
 }
-
 .input-wrapper {
     position: relative;
     display: flex;
@@ -283,8 +280,6 @@ body {
     overflow: hidden;
     margin-top: 20px;
 }
-
-/* Input */
 .email-input {
     width: 100%;
     padding: 15px 160px 15px 20px;
@@ -294,7 +289,6 @@ body {
     outline: none;
     box-sizing: border-box;
 }
-
 .subscribe-button {
     position: absolute;
     top: 0;
@@ -310,6 +304,27 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+.subscribe-button:hover {
+    background-color: #0E73C9;
+}
+.feed-back img {
+    position: absolute;
+    width: 409.54px;
+    height: 400.08px;
+    transform: rotate(45deg);
+}
+.feed-back-img-1 {
+    position: absolute;
+    bottom: 250px;
+    left: -100px;
+    transform: translateX(-150px);
+}
+.feed-back-img-2 {
+    position: absolute;
+    bottom: 100px;
+    right: 70px;
+}
+
 
 /* تحديثات خاصة بالـ responsiveness */
 @media (max-width: 1200px) {
@@ -394,12 +409,6 @@ body {
         height: 25px;
     }
 
-    .container-7 {
-        width: 100%;
-        margin: 0;
-        padding: 15px;
-    }
-
     .feed-back h2 {
         font-size: 28px;
     }
@@ -412,12 +421,7 @@ body {
         padding: 10px 20px;
     }
 
-    .subscribe-button {
-        padding: 10px;
-        font-size: 14px;
-    }
 }
-
 @media (max-width: 450px) {
     .hero-section h1 {
         font-size: 1.6rem;
@@ -450,36 +454,8 @@ body {
     .email-input {
         font-size: 14px;
     }
-
-    .subscribe-button {
-        font-size: 14px;
-    }
 }
 
-
-.subscribe-button:hover {
-    background-color: #0E73C9;
-}
-
-.feed-back img {
-    position: absolute;
-    width: 409.54px;
-    height: 400.08px;
-    transform: rotate(45deg);
-}
-
-.feed-back-img-1 {
-    position: absolute;
-    bottom: 250px;
-    left: -100px;
-    transform: translateX(-150px);
-}
-
-.feed-back-img-2 {
-    position: absolute;
-    bottom: 100px;
-    right: 70px;
-}
 
 /* Responsive Design */
 @media (min-width: 768px) {
@@ -861,11 +837,7 @@ footer {
 }
 
 /* تحسين استجابة الأزرار */
-.subscribe-button {
-    width: 100%;
-    padding: 12px 0;
-    font-size: 1.1rem;
-}
+
 
 @media (max-width: 576px) {
     .footer-container {
