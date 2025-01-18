@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-
 :root {
     --base-color: white;
     --main-text-color: black;
@@ -33,12 +32,14 @@
     top: 20px;
     right: 20px;
 }
-@media(max-width:450px){
-    #theme-switch{
+
+@media(max-width:450px) {
+    #theme-switch {
         width: 25px;
         height: 25px;
     }
 }
+
 #theme-switch svg {
     fill: var(--main-text-color);
 }
@@ -55,7 +56,6 @@
     display: block;
 }
 
-
 /* تنسيق عام */
 body {
     font-family: "Inter", sans-serif;
@@ -65,10 +65,11 @@ body {
     padding: 0;
     color: #333;
 }
+
 /* /////////// */
 /* about food-ieland */
-.hero-section , 
-#mission ,
+.hero-section,
+#mission,
 #story {
     display: flex;
     background-color: var(--box-color);
@@ -79,24 +80,27 @@ body {
     text-align: center;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
+
 .hero-section h1 {
     font-size: 2.8rem;
     font-weight: bold;
     color: rgba(227, 187, 58, 0.856);
     margin-bottom: 1.5rem;
 }
+
 .hero-section p {
     font-size: 1.2rem;
     color: var(--main-text-color);
     text-align: justify;
 }
+
 .hero-section .hero-zero {
     width: 850px;
     height: 350px;
     border-radius: 2.8px;
-    box-shadow: 9px 12px 15px #81acd9;
     background-color: white;
 }
+
 .hero-section .hero-zero .pic-about {
     width: 100%;
     height: 100%;
@@ -107,33 +111,36 @@ body {
 }
 
 /*  "Our Mission" و "Our Story" */
-#mission ,
+#mission,
 #story {
     padding: 3rem 2rem;
     text-align: center;
     background-color: var(--box-color);
 }
-#mission h2 ,
+
+#mission h2,
 #story h2 {
     font-size: 2.5rem;
     color: #aa8d0c;
     margin-bottom: 1rem;
 }
-#mission p ,
+
+#mission p,
 #story p {
     font-size: 1.1rem;
     color: var(--main-text-color);
     max-width: 700px;
     margin: 0 auto;
 }
+
 #story .pic2 {
-    width: 1000px;
+    width: 800px;
     height: 400px;
     border-radius: 5px;
     margin-left: 12px;
-    box-shadow: 9px 12px 15px rgba(227, 187, 58, 0.856);
     background-color: white;
 }
+
 #story .pic2 .pic-story {
     width: 100%;
     height: 100%;
@@ -142,6 +149,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .navbar-mission {
     font-size: 6rem;
     font-weight: bold;
@@ -150,11 +158,10 @@ body {
     margin-bottom: 1.5rem;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 9px 12px 15px rgba(227, 187, 58, 0.856); 
-    background-color: white;  
+    background-color: white;
 }
 
-/* Join Our Community*/
+/* Join Our Community */
 .cta-section {
     background-color: var(--box-color);
     padding: 2rem;
@@ -304,6 +311,152 @@ body {
     transition: background-color 0.3s;
 }
 
+/* تحديثات خاصة بالـ responsiveness */
+@media (max-width: 1200px) {
+    .hero-section {
+        flex-direction: column;
+        padding: 4rem 2rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .hero-section .hero-zero {
+        width: 100%;
+        height: auto;
+    }
+
+    .cta-section {
+        padding: 1.5rem;
+    }
+
+    .cta-section input {
+        width: 90%;
+    }
+
+    .cta-section button {
+        width: 90%;
+    }
+
+    #theme-switch {
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .feed-back h2 {
+        font-size: 36px;
+    }
+
+    .input-wrapper {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-section form {
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .cta-section input {
+        max-width: 90%;
+    }
+
+    .cta-section button {
+        width: 90%;
+    }
+
+    #theme-switch {
+        width: 25px;
+        height: 25px;
+    }
+
+    .container-7 {
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .feed-back h2 {
+        font-size: 28px;
+    }
+
+    .input-wrapper {
+        width: 100%;
+    }
+
+    .email-input {
+        padding: 10px 20px;
+    }
+
+    .subscribe-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .section h2 {
+        font-size: 1.6rem;
+    }
+
+    .cta-section input {
+        width: 100%;
+    }
+
+    .cta-section button {
+        width: 100%;
+    }
+
+    .feed-back h2 {
+        font-size: 24px;
+    }
+
+    .input-wrapper {
+        width: 90%;
+    }
+
+    .email-input {
+        font-size: 14px;
+    }
+
+    .subscribe-button {
+        font-size: 14px;
+    }
+}
+
+
 .subscribe-button:hover {
     background-color: #0E73C9;
 }
@@ -357,6 +510,7 @@ body {
         padding: 10px;
         border-radius: 30px 30px 0 0;
     }
+
     .subscribe-button {
         position: static;
         border-radius: 0 0 30px 30px;
@@ -416,6 +570,7 @@ footer {
     width: 100%;
     height: 100px;
     padding: 1.5rem;
+    text-decoration: none;
 }
 
 .footer-container {
@@ -423,17 +578,20 @@ footer {
     align-items: center;
     justify-content: space-between;
     border-bottom: var(--bb) solid 2px;
+    text-decoration: none;
 }
 
 .footer-logo {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+    text-decoration: none;
 }
 
 .footer-text {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 }
 
 .page-name1 {
@@ -449,16 +607,19 @@ footer {
     font-size: 12px;
     line-height: 15px;
     color: var(--sec-text-color);
+    text-decoration: none;
 }
 
 .footer-list {
     display: flex;
     margin-right: 20px;
+    text-decoration: none;
 }
 
 .social-footer {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .social-footer a {
@@ -467,18 +628,22 @@ footer {
     color: var(--main-text-color);
     font-size: 1.1rem;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .social-footer a:hover {
     color: #0e73c9;
     fill: #0e73c9;
+    text-decoration: none;
 }
 
 @media (max-width: 800px) {
     .footer-list {
         display: none;
+        text-decoration: none;
     }
 }
+
 .page-icon ul li {
     display: inline-block;
     margin: 0 6px;
@@ -513,6 +678,7 @@ footer {
 .footer-end {
     margin-top: 25px;
     display: flex;
+    text-decoration: none;
 }
 
 .footer-end-1 {
@@ -520,6 +686,7 @@ footer {
     gap: 10px;
     margin: auto;
     margin-bottom: 40px;
+    text-decoration: none;
 }
 
 .footer-end-1 p {
@@ -529,6 +696,7 @@ footer {
     letter-spacing: -2%;
     color: var(--main-text-color);
     text-align: center;
+    text-decoration: none;
 }
 
 .footer-end-1 span {
@@ -538,7 +706,7 @@ footer {
     letter-spacing: -2%;
     color: rgba(163, 98, 1, 0.555);
     text-align: center;
-
+    text-decoration: none;
 }
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\the responsive////////////////////////////*/
@@ -597,10 +765,12 @@ footer {
     .footer-container {
         flex-direction: column;
         text-align: center;
+        text-decoration: none;
     }
 
     .footer-list {
         display: none;
+        text-decoration: none;
     }
 }
 
@@ -616,5 +786,178 @@ footer {
     .footer-container {
         flex-direction: row;
         justify-content: space-between;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .navbar {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .pics, .hero-zero, .pic2 {
+        width: 90%;
+        height: auto;
+        margin: 0 auto 1rem auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navbar-mission {
+        font-size: 3rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pics, .hero-zero, .pic2 {
+        width: 70%;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .footer-list {
+        display: none;
+        text-decoration: none;
+    }
+}
+
+/* تحسين استجابة الصور */
+.pics, .hero-zero, .pic2 {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 1rem auto;
+}
+
+/* تحسين استجابة الأزرار */
+.subscribe-button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 576px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .footer-logo, .footer-text {
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .footer-end-1 {
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+
+    .social-footer {
+        justify-content: center;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+}
+
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* التأثير عند المرور */
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+    /* تكبير الكرت بنسبة 5% عند المرور */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* إضافة ظلال عند المرور */
+}
+
+.card-hover:active {
+    transform: scale(0.98);
+    /* تصغير الكرت عند الضغط */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* تقليل الظلال عند الضغط */
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #offcanvasNavbar {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+}
+
+.page-icon ul li a {
+    width: 60px;
+    height: 45px;
+    font-size: 1rem;
+    line-height: 16px;
+}
+
+@media (max-width: 576px) {
+    .page-icon ul li a {
+        width: 50px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-end-1 p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+    
+    .footer-end-1 span {
+        font-size: 1rem;
+        text-decoration: none;
+    }
+
+    .social-footer a {
+        font-size: 1rem;
+        text-decoration: none;
     }
 }
