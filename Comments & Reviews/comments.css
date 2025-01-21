@@ -200,6 +200,7 @@ form .textarea textarea {
     width: 100%;
     outline: none;
     color: black;
+    border: 1px solid transparent;
     background-color: white;
     padding: 10px;
     font-size: 17px;
