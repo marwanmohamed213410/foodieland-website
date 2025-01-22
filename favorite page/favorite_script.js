@@ -19,10 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-/**
- * Function to add the selected item to the favorites section
- * @param {Object} itemDetails - The details of the item to display in favorites
- */
+
 function addToFavPage(itemDetails) {
     const favoritesContainer = document.getElementById('favorites-container');
     if (!favoritesContainer) {
@@ -132,10 +129,7 @@ function addToFavPage(itemDetails) {
     }
 }
 
-/**
- * Function to toggle the favorite status
- * @param {HTMLElement} buttonElement - The clicked button
- */
+
 function toggleFavorite(buttonElement) {
     const itemElement = buttonElement.closest('.item'); // Get the parent item div
     const svgIcon = buttonElement.querySelector('svg'); // Get the SVG icon inside the button
