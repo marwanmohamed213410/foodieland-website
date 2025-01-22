@@ -124,7 +124,12 @@ form.addEventListener('submit', function (event) {
             if (passValue === copassValue) {
                 // Get existing users from localStorage or create a new array
                 let users = JSON.parse(localStorage.getItem('users')) || [];
-
+                let exitingUser = users.find(user => user.email === emailValue);
+                if (exitingUser)
+                {
+                    spanEmail.textContent = "This email is already taken";
+                }
+                else {
                 // Create new user object
                 const user = { username: userValue, email: emailValue, password: passValue };
 
@@ -137,7 +142,9 @@ form.addEventListener('submit', function (event) {
                 spanConpass.textContent = "Two Values Equal";
                 window.location.href = '../login/login.html';
                 form.reset();
-            } else {
+                } 
+            }
+            else {
                 spanConpass.textContent = "Confirm Password not Equal to password";
             }
         }
@@ -149,7 +156,6 @@ username.addEventListener('input', function () {
         spanUsername.textContent = "";
     } else {
         spanUsername.textContent = "You Should Enter Your Name";
-        spanUsername.style.color = 'blue';
     }
 });
 
@@ -158,7 +164,6 @@ email.addEventListener('input', function () {
         spanEmail.textContent = "";
     } else {
         spanEmail.textContent = "You Should Enter Your Email";
-        spanEmail.style.color = 'blue';
     }
 });
 
@@ -167,7 +172,6 @@ password.addEventListener('input', function () {
         spanPass.textContent = "";
     } else {
         spanPass.textContent = "You Should Enter Your Password ";
-        spanPass.style.color = 'blue';
     }
 });
 
@@ -176,6 +180,5 @@ confirmPass.addEventListener('input', function () {
         spanConpass.textContent = "";
     } else {
         spanConpass.textContent = "You Should Enter The Password Again";
-        spanConpass.style.color = 'blue';
     }
 });
