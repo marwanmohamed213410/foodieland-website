@@ -20,6 +20,7 @@ Frontend: HTML, CSS, js, Bootstrap
 <li><a href="https://drive.google.com/file/d/1z_vDCm5xigUj85lr7HLK0E5JJ5lk8X44/view?usp=sharing">Team Name and idea</a></li>
 <li>temblate design on <a href="https://www.figma.com/design/WzcCQ0Ov7PHkSVO8cH27e6/BATU-web-design?node-id=1-296&t=x3onsBBEuRip2Ehh-1">figma</a></li>
 <li><a href="https://youtu.be/O-6NMzrPxDw">YouTube Demo Video</a></li>
+<li><a href="https://drive.google.com/file/d/1QQKV8nlm12KXlFDn7apXUQyKXI2Ue5r1/view?usp=sharing">Decomentation</a></li>
 </ul>
 <h2>👾 Authors</h2>
 <ul>
