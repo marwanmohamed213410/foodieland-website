@@ -125,6 +125,17 @@ form {
     line-height: 57px;
     color: var(--main-text-color);
 }
+/* start styling spans */
+#signup-span-email , 
+#signup-span-username ,
+#signup-span-pass ,
+#signup-span-conpass {
+    position: absolute;
+    color: red;
+    font-size: 16px;
+    left: 0;
+    top: 40px; 
+}
 
 .card::after
 {
