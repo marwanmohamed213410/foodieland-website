@@ -155,11 +155,15 @@
     </div>
     </div>
     <script>
+        const form = document.querySelector("form");
         const btn = document.querySelector(".btn-post");
         const post = document.querySelector(".post");
         const widget = document.querySelector(".star-widget-1");
         const editBtn = document.querySelector(".edit");
 
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+        });
         btn.onclick = () => {
             widget.style.display = "none";
             post.style.display = "block";
